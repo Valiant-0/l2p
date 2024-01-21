@@ -1,0 +1,137 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css"
+href="style.css" />
+<title>Status Window Info</title>
+</head>
+
+<body><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	
+
+<table border="1" cellpadding="0" width="1000" align="center">
+
+<!----left---->
+<td class="left" width=200 valign=top>
+<script src="sidebar.js"><hr>
+</script>
+</td>
+
+<!----middle---->
+<td class="main" width=800 valign=top bgcolor=white>
+<h2>Status Window Info</h2>
+<ul>
+
+<li>Level</li>
+<ul>
+<li>Affects many stats. One piece of data used is the Level Modifier, which is (level+89)/100</li>
+</ul>
+
+<li>HP</li>
+<ul>
+<li>see <a href="hp.html">here</a> for how HP is calculated</li>
+</ul>
+
+<li>CP</li>
+<ul>
+<li>see <a href="cp.html">here</a> for how CP is calculated</li>
+</ul>
+
+<li>MP</li>
+<ul>
+<li>see <a href="mp.html">here</a> for how MP is calculated</li>
+</ul>
+
+<li>P.Atk.</li>
+<ul>
+<li>see <a href="patk.html">here</a> for how P.Atk. is calculated</li>
+</ul>
+
+<li>M.Atk.</li>
+<ul>
+<li>see <a href="matk.html">here</a> for how M.Atk. is calculated</li>
+<li>affects magic skill damage</li>
+<li>affects curse land rates</li>
+</ul>
+
+<li>P.Def.</li>
+<ul>
+<li>see <a href="pdef.html">here</a> for how P.Def. is calculated</li>
+</ul>
+
+<li>M.Def.</li>
+<ul>
+<li>see <a href="mdef.html">here</a> for how M.Def. is calculated</li>
+</ul>
+
+<li>Accuracy</li>
+ <ul>
+<li>see <a href="accuracy.html">here</a> for how Accuracy is calculated</li>
+<li>Accuracy has nothing whatsoever to do with your chance to land a skill such as Deadly Blow.</li>
+<li>It is unknown exactly how accuracy works. We do know level is already factored into the calculation just because the stat itself goes up by 1 every time you level up.</li>
+<li>Chance to hit changes based on several factors:</li>
+<table class="data" align=center>
+<tr><td>in front of target</td><td>0%</td></tr>
+<tr><td>to side of target</td><td>+5%</td></tr>
+<tr><td>behind target</td><td>+10%</td></tr>
+<tr><td>above target</td><td>3%</td></tr>
+<tr><td>below target</td><td>-3%</td></tr>
+</table>
+</ul>
+
+<li>Evasion</li>
+<ul>
+<li>see <a href="evasion.html">here</a> for how Evasion is calculated</li>
+<li>The game measures the attacker's Accuracy versus the defender's Evasion in order to decide if an attack lands.</li>
+	<ul>
+	<li>It is impossible to dodge magic or physical skills.</li>
+	<li>Deadly Blow and similar skills are never evaded. If it misses, it is because the skill cannot hit unless the game determines it was a critical hit.</li>
+	</ul>
+</ul>
+
+<li>Critical</li>
+<ul>
+<li>see <a href="critical.html">here</a> for how Critical is calculated</li>
+<li>Chance to critical from the front of a target is critical/1000.</li>
+<li>The chance is also affected by the attacker's position relative to the defender.
+<ul>
+<li>It isn't known how by how much, but attacking from the side or from the rear yields a higher critical chance; my educated guess is a 50% boost from behind and the side equally.</li>
+<li>It is said that being at a higher than certain angle from the target increases critical while being below decreases in the same way that accuracy does.</li>
+</ul>
+<li>Critical is capped at 500. You cannot have higher than 500 status window Critical.</li>
+</ul>
+
+<li>Speed</li>
+<ul>
+<li>see <a href="speed.html">here</a> for how Speed is calculated</li>
+<li>200 Speed is exactly twice as fast as 100 Speed. This means a character who already has 200 run speed sees less of a benefit from getting more run speed than a character with less run speed.</li>
+	<ul>
+	<li>For example, if you go from 121 run speed to 127, this is a ~5% boost to your run speed. But a character who goes from 190 to 196 run speed will only see a ~3% increase.</li>
+	</ul>
+</ul>
+
+<li>Atk. Spd.</li>
+<ul>
+<li>see <a href="atkspd.html">here</a> for how Atk. Spd. is calculated</li>
+<li>Atk. Spd. is supposedly directly relative. 1000 Atk. Spd. is twice as fast as 500 Atk. Speed.</li>
+<li>To find a non-Yumi bow's true Atk. Spd., divide the status window Atk. Speed by 2.</li>
+<li>Atk. Spd. has a direct effect on both the time it takes to use a physical skill and the time it takes for the skill to be reusable.</li>
+</ul>
+
+<li>Casting Spd.</li>
+<ul>
+<li>see <a href="castingspeed.html">here</a> for how Casting Spd. is calculated</li>
+<li>Casting Spd. has a direct effect on both the time it takes to cast a magical skill and the time it takes for the skill to become reusable.</li>
+</ul>
+
+</ul>
+
+<!----right column---->
+
+</table>
+
+</body>
+</html>
+</body>
+</html>

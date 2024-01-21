@@ -1,0 +1,237 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css"
+href="style.css" />
+<title>Atk. Spd.</title>
+</head>
+
+<body><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	
+
+<table border="1" cellpadding="0" width="1000" align="center">
+
+<!----left---->
+<td class="left" width=200 valign=top>
+<script src="sidebar.js"><hr>
+</script>
+</td>
+
+<!----middle---->
+<td class="main" width=800 valign=top bgcolor=white>
+<h2>Atk. Spd.</h2>
+<hr>
+<ul>
+<li>Atk. Spd = DEX Modifier*Weapon Atk.Spd.*Passives*Buffs*Armor Bonus*Weapon Bonus*M.Def. Bonus+Heroic Berserker</li>
+<li>The final Atk. Speed is rounded down.</li>
+</ul>
+<hr>
+
+<h3>DEX modifier</h3>
+<table class="data" align=center>
+<tr><td>DEX</td><td>modifier</td><td>DEX</td><td>modifier</td></tr>
+<tr><td>21</td><td>1.01</td><td>33</td><td>1.13</td></tr>
+<tr><td>22</td><td>1.02</td><td>34</td><td>1.14</td></tr>
+<tr><td>23</td><td>1.03</td><td>35</td><td>1.15</td></tr>
+<tr><td>24</td><td>1.04</td><td>36</td><td>1.16</td></tr>
+<tr><td>25</td><td>1.05</td><td>37</td><td>1.17</td></tr>
+<tr><td>26</td><td>1.06</td><td>38</td><td>1.18</td></tr>
+<tr><td>27</td><td>1.07</td><td>39</td><td>1.19</td></tr>
+<tr><td>28</td><td>1.08</td><td>40</td><td>1.20</td></tr>
+<tr><td>29</td><td>1.09</td><td>41</td><td>1.21</td></tr>
+<tr><td>30</td><td>1.10</td><td>42</td><td>1.22</td></tr>
+<tr><td>31</td><td>1.11</td><td>43</td><td>1.24</td></tr>
+<tr><td>32</td><td>1.12</td><td></td><td></td></tr>
+</table>
+<hr>
+
+<h3>Weapon Atk. Spd.</h3>
+<table class="data" align=center>
+<tr><td>type</td><td>Modifier</td></tr>
+<tr><td>Very Fast</td><td>433</td></tr>
+<tr><td>Fast</td><td>379</td></tr>
+<tr><td>Normal</td><td>325</td></tr>
+<tr><td>Slow</td><td>293</td></tr>
+<tr><td>Very Slow</td><td>227</td></tr>
+<tr><td>Weaponless</td><td>300</td></tr>
+</table>
+<hr>
+
+<h3>Passives</h3>
+<table class="data" align=center>
+<tr><td>skill</td><td>level</td><td>Modifier</td></tr>
+<tr><td>Boost Attack Speed</td><td>1</td><td>1.05</td></tr>
+<tr><td>Boost Attack Speed</td><td>2</td><td>1.07</td></tr>
+<tr><td>Boost Attack Speed</td><td>3</td><td>1.10</td></tr>
+<tr><td>Mystic w/o mastery</td><td>1</td><td>0.80</td></tr>
+</table>
+<hr>
+
+<h3>Buffs/Debuffs/Toggles</h3>
+<ul>
+<li>If you have more than one of these, you multiply all of your buffs into the formula.</li>
+<li>Please be aware of buffs that do not stack.</li>
+<li>Rapid Shot will only work on bows.</li>
+</ul>
+
+<table class="data" align=center>
+<tr><td>buff</td><td>level</td><td>modifier</td></tr>
+<tr><td>Angelic Icon</td><td>1</td><td>1.10</td></tr>
+<tr><td>Angelic Icon</td><td>2</td><td>1.20</td></tr>
+<tr><td>Angelic Icon</td><td>3</td><td>1.30</td></tr>
+<tr><td>Assassin Servitor</td><td>1</td><td>1.20</td></tr>
+<tr><td>Berserker Spirit</td><td>1</td><td>1.05</td></tr>
+<tr><td>Berserker Spirit</td><td>2</td><td>1.08</td></tr>
+<tr><td>Chant of Fury</td><td>1</td><td>1.15</td></tr>
+<tr><td>Chant of Fury</td><td>2</td><td>1.33</td></tr>
+<tr><td>Chant of Victory</td><td>1</td><td>1.20</td></tr>
+<tr><td>Dance of Fury</td><td>1</td><td>1.15</td></tr>
+<tr><td>Dead Eye</td><td>1-8</td><td>0.80</td></tr>
+<tr><td>Duelist Spirit</td><td>1</td><td>1.08</td></tr>
+<tr><td>Duelist Spirit</td><td>2</td><td>1.12</td></tr>
+<tr><td>Final Servitor</td><td>1</td><td>1.20</td></tr>
+<tr><td>Fire Vortex</td><td>1</td><td>0.70</td></tr>
+<tr><td>Fist Fury</td><td>1</td><td>1.25</td></tr>
+<tr><td>Greater Swift Attack Potion</td><td>1</td><td>1.33</td></tr>
+<tr><td>Haste</td><td>1</td><td>1.15</td></tr>
+<tr><td>Haste</td><td>2</td><td>1.33</td></tr>
+<tr><td>Herb of Atk. Speed</td><td>1</td><td>1.33</td></tr>
+<tr><td>Ice Vortex</td><td>1</td><td>0.90</td></tr>
+<tr><td>Parry Stance</td><td>1</td><td>0.80</td></tr>
+<tr><td>Poltergeist Cubic</td><td>1</td><td>0.77</td></tr>
+<tr><td>Potion of Alacrity</td><td>1</td><td>1.15</td></tr>
+<tr><td>Prophecy of Fire</td><td>1</td><td>1.20</td></tr>
+<tr><td>Prophecy of Wind</td><td>1</td><td>1.20</td></tr>
+<tr><td>Psycho Symphony</td><td>1-3</td><td>0.90</td></tr>
+<tr><td>Psycho Symphony</td><td>4-5</td><td>0.85</td></tr>
+<tr><td>Psycho Symphony</td><td>6-7</td><td>0.8</td></tr>
+<tr><td>Psycho Symphony</td><td>8-9</td><td>0.75</td></tr>
+<tr><td>Psycho Symphony</td><td>10</td><td>0.70</td></tr>
+<tr><td>Puma Spirit Totem</td><td>1</td><td>1.20</td></tr>
+<tr><td>Rage of Pa'agrio</td><td>1</td><td>1.05</td></tr>
+<tr><td>Rage of Pa'agrio</td><td>2</td><td>1.08</td></tr>
+<tr><td>Rapid Fire</td><td>1-8</td><td>1.20</td></tr>
+<tr><td>Rapid Shot</td><td>1</td><td>1.08</td></tr>
+<tr><td>Rapid Shot</td><td>2</td><td>1.12</td></tr>
+<tr><td>Riposte Stance</td><td>1</td><td>0.80</td></tr>
+<tr><td>Seal of Despair</td><td>1</td><td>0.80</td></tr>
+<tr><td>Seal of Winter</td><td>1</td><td>0.77</td></tr>
+<tr><td>Servitor Haste</td><td>1</td><td>1.15</td></tr>
+<tr><td>Servitor Haste</td><td>2</td><td>1.33</td></tr>
+<tr><td>Spoil (enchanted)</td><td>1+<td>0.77</td></tr>
+<tr><td>Spoil Festival (enchanted)</td><td>1+<td>0.77</td></tr>
+<tr><td>Thrill Fight</td><td>1</td><td>1.05</td></tr>
+<tr><td>Thrill Fight</td><td>2</td><td>1.10</td></tr>
+<tr><td>Warrior Servitor</td><td>1</td><td>1.20</td></tr>
+<tr><td>Wild Defense</td><td>1+</td><td>0.30</td></tr>
+<tr><td>Wind Shackle</td><td>1</td><td>0.83</td></tr>
+<tr><td>Wind Shackle</td><td>2-5</td><td>0.80</td></tr>
+<tr><td>Wind Shackle</td><td>6+</td><td>0.77</td></tr>
+<tr><td>Wind Vortex</td><td>1</td><td>0.90</td></tr>
+<tr><td>Zealot (Fist/Sword/Polearm/Blunt)</td><td>1</td><td>1.10</td></tr>
+<tr><td>Zealot (Fist/Sword/Polearm/Blunt)</td><td>2</td><td>1.20</td></tr>
+<tr><td>Zealot (Fist/Sword/Polearm/Blunt)</td><td>3</td><td>1.30</td></tr>
+</table>
+<hr>
+
+<h3>Armor Bonus</h3>
+<table class="data" align=center>
+<tr><td>type</td><td>Modifier</td></tr>
+<tr><td>Tallum heavy set</td><td>1.08</td></tr>
+<tr><td>Dark Crystal light set</td><td>1.04</td></tr>
+<tr><td>Draconic Leather set</td><td>1.04</td></tr>
+</table>
+<hr>
+
+<h3>Weapon Bonus</h3>
+<ul>
+<li>How is "Rsk. Haste" any shorter than "Risk Haste"?</li>
+<li>The Atk. Speed boosts of Rsk. Haste weapons are only active when HP is at 60% or below.</li>
+</ul>
+<table class="data" align=center>
+<tr><td>type</td><td>modifier</td></tr>
+<tr><td>Haste</td><td></td></tr>
+<tr><td>Angel Slayer</td><td>1.07</td></tr>
+<tr><td>Art of Battle Axe</td><td>1.06</td></tr>
+<tr><td>Battle Axe</td><td>1.08</td></tr>
+<tr><td>Berserker Blade</td><td>1.07</td></tr>
+<tr><td>Big Hammer</td><td>1.08</td></tr>
+<tr><td>Blood Tornado</td><td>1.06</td></tr>
+<tr><td>Caliburs*Samurai Long Sword</td><td>1.05</td></tr>
+<tr><td>Caliburs*Sword of Nightmare</td><td>1.05</td></tr>
+<tr><td>Deadman's Glory</td><td>1.06</td></tr>
+<tr><td>Destroyer Hammer</td><td>1.06</td></tr>
+<tr><td>Dwarven War Hammer</td><td>1.07</td></tr>
+<tr><td>Elven Long Sword*Elven Long Sword</td><td>1.04</td></tr>
+<tr><td>Fist Blade</td><td>1.07</td></tr>
+<tr><td>Forgotten Blade</td><td>1.07</td></tr>
+<tr><td>Halberd</td><td>1.06</td></tr>
+<tr><td>Heavens Divider</td><td>1.07</td></tr>
+<tr><td>Infernal Master</td><td>1.06</td></tr>
+<tr><td>Infinity Crusher</td><td>1.07</td></tr>
+<tr><td>Infinity Spear</td><td>1.07</td></tr>
+<tr><td>Infinity Stinger</td><td>1.03</td></tr>
+<tr><td>Karik Horn</td><td>1.07</td></tr>
+<tr><td>Katana</td><td>1.07</td></tr>
+<tr><td>Katana*Katana</td><td>1.04</td></tr>
+<tr><td>Katana*Tsurugi</td><td>1.06</td></tr>
+<tr><td>Keshanberk*Keshanberk</td><td>1.08</td></tr>
+<tr><td>Knuckle Duster</td><td>1.07</td></tr>
+<tr><td>Raid Sword*Raid Sword</td><td>1.04</td></tr>
+<tr><td>Raid Sword*Tsurugi</td><td>1.06</td></tr>
+<tr><td>Saint's Spear</td><td>1.07</td></tr>
+<tr><td>Samurai Longsword</td><td>1.07</td></tr>
+<tr><td>Samurai Long Sword*Samurai Long Sword</td><td>1.04</td></tr>
+<tr><td>Shamshir*Tsurugi</td><td>1.06</td></tr>
+<tr><td>Silver Axe</td><td>1.08</td></tr>
+<tr><td>Spirit Sword</td><td>1.07</td></tr>
+<tr><td>Spirit Sword*Tsurugi</td><td>1.06</td></tr>
+<tr><td>Star Buster</td><td>1.06</td></tr>
+<tr><td>Stormbringer*Raid Sword</td><td>1.02</td></tr>
+<tr><td>Stormbringer*Tsurugi</td><td>1.07</td></tr>
+<tr><td>Sword of Damascus</td><td>1.06</td></tr>
+<tr><td>Sword of Limit*Tsurugi</td><td>1.05</td></tr>
+<tr><td>Sword of Nightmare*Tsurugi</td><td>1.05</td></tr>
+<tr><td>Tallum Blade</td><td>1.06</td></tr>
+<tr><td>Tsurugi</td><td>1.07</td></tr>
+<tr><td>War Axe</td><td>1.07</td></tr>
+<tr><td></td><td></td></tr>
+<tr><td>Rsk. Haste</td><td></td></tr>
+<tr><td>Artho Nail</td><td>1.10</td></tr>
+<tr><td>Bellion Cestus</td><td>1.09</td></tr>
+<tr><td>Chakram</td><td>1.13</td></tr>
+<tr><td>Cursed Dagger</td><td>1.13</td></tr>
+<tr><td>Dark Elven Dagger</td><td>1.13</td></tr>
+<tr><td>Doom Crusher</td><td>1.11</td></tr>
+<tr><td>Fist Blade</td><td>1.12</td></tr>
+<tr><td>Great Pata</td><td>1.11</td></tr>
+<tr><td>Knuckle Duster</td><td>1.12</td></tr>
+<tr><td>Meteor Shower</td><td>1.11</td></tr>
+<tr><td>Soul Seperator</td><td>1.11</td></tr>
+<tr><td>Stiletto</td><td>1.12</td></tr>
+<tr><td>Sword of Delusion</td><td>1.12</td></tr>
+</table>
+<hr>
+
+<h3>M.Def. Bonus</h3>
+<table class="data" align=center>
+<tr><td>type</td><td>Modifier</td></tr>
+<tr><td>Ring of Baium</td><td>1.04</td></tr>
+</table>
+<hr>
+
+<h3>Heroic Berserker</h3>
+<table class="data" align=center>
+<tr><td>debuff</td><td>level</td><td>modifier</td></tr>
+<tr><td>Heroic Berserker</td><td>1</td><td>100</td></tr>
+</table>
+
+<!----right column---->
+
+</table>
+
+</body>
+</html>
+</body>
+</html>

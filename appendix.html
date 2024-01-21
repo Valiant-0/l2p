@@ -1,0 +1,341 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css"
+href="styleie.css" />
+<![if !IE]>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+<![endif]>
+<script src="calculator.js"></script>
+<title>L2Calc</title>
+</head>
+ 
+<table border="1" cellpadding="0" width="1000" align="center">
+ 
+<!----left---->
+ 
+<!----middle---->
+<td class="main" width=1000 valign=top bgcolor=white>
+<a href="index.html">Back to L2Calc</a><br>
+<a href="revision.html#A">To Credits</a>
+<hr>
+<b>This is a huge, messy pile of notes made while updating L2Calc. I'll organize them at some point....maybe.</b>
+<hr>
+Not Implemented:
+<ul>
+<li>I trashed the cookie and I can't be bothered to fix it for now!</li>
+<li>Skill damage</li>
+<li>Magic critical rate</li>
+<li>Toggle HP/MP Costs</li>
+<li>Excellent Shield Defense</li>
+<li>Critical Drain SAs</li>
+<li>Jewelry augmentations</li>
+<li>PVP bonuses for equipment (do not confuse this with pvp damage bonus for having an SA)</li>
+<li>+6 S80/84 bonuses unverified and assumed to be the same as S grade.</li>
+<li>Enemy target requires a rewrite.</li>
+<li>Servitor Calculator requires a rewrite.</li>
+<li>There's a lot of Sealed ___ equipment missing from L2Calc. I'm just too lazy to add them and there's never been a demand.</li>
+<li>Heal over time skills are not implemented.</li>
+<li>Vampiric Rage effect skills don't consider the HP of the target in L2Calc.</li>
+<li>A character that is registered on the designated battlefield does not incur any Exp. penalty upon death; however, a death on the registered battlefield reduces some stats for a certain amount of time. </li>
+<li>The following changes have been made to Apella armor: Increased maximum CP and when the wearer is damaged by another player, a debuff no longer occurs. Instead, the player who is wearing the armor is now buffed.</li>
+	<ul>
+	<li>Heavy: Increased M. Def., decreased chance of getting critical hit from another player (+ increased critical strike rate)</li>
+	<li>Light: Increased dodge, decreased critical damage amount from another player (+ increased attack speed)</li>
+	<li>Robe: Increased P. Def., increased moving speed (+ increased M. Atk.)</li>
+	<li>New Apella Combat Set - No class restrictions exist, Decrease rate of experience points in case of death is 40% of the general death cases (existing Apella Set 70%)</li>
+	</ul>
+<li>No pets.</li>
+	<ul>
+	<li>Wolves/hatchlings/buffalo etc were never implemented.</li>
+	<li>Great wolves.</li>
+	<li>Fenrir</li>
+	<li>Improved Baby Buffalo, Kookaburra, Cougar</li>
+	<li>Great Snow Wolf, Snow Fenrir, Red Dusk/Red Star/Red Wing Strider.</li>
+	<li>Pet equipment.</li>
+	<li>Maguen and Elite Maguen pets can be acquired in the Seed of Annihilation.</li>
+	</ul>
+<li>Normal transformation types (warrior, magician, etc.) have been added for characters that are levels 70-80. These transformations function according to a specific job class, one has healer skills, one has wizard skills, and the other three have various warrior skills.</li>
+<li>Talismans/Bracelets.</li>
+<li>New Talismans from Giran jewelry shop, as opposed to the previous ones which were fort-only.</li>
+<li>Improved Apella armor.</li>
+<li>Nightshade's P Def. and M Def. have been increased by 30%.</li>
+<li>Servitors' battle values (HP, Physical Attack, Magic Attack and Defense) have been changed.</li>
+<li>New skills have been added to Feline Queen, Unicorn Seraphim, and Nightshade.</li>
+	<ul>
+	<li>Feline Queen: Blessed Body, Blessed Soul, and Haste</li>
+	<li>Unicorn Seraphim: Acumen, Clarity, Empower, and Wild Magic</li>
+	<li>Nightshade: Death Whisper, Focus, and Guidance</li>
+	</ul>
+<li>The distance between the attacker and the target now influences the damage of long range physical attacks.</li>
+<li>New skills.</li>
+	<ul>
+	<li>Iron Shield (knight classes) - no numbers available. +30% shield P.Def.</li>
+	<li>Insane Crusher (Hell Knight) - no numbers.</li>
+	<li>Spirit of Phoenix (Phoenix Knight) - no numbers.</li>
+	<li>Flame Icon (Phoenix Knight) - no numbers.</li>
+	<li>Eva's Will (Eva's Templar) - no numbers.</li>
+	<li>Touch of Eva (Eva's Templar) - no numbers.</li>
+	<li>Pain of Shillien (Shillien Templar) - no numbers.</li>
+	<li>Touch of Shillien (Shillien Templar) - no numbers.</li>
+	<li>Expose Weakness (dagger) - no numbers.</li>
+	<li>Golem Armor (WS)</li>
+	<li>Flame Armor (Sorc)</li>
+	<li>Frost Armor (SpS)</li>
+	<li>Hurricane Armor (SH)</li>
+	<li>Excessive Loyalty (summoners)</li>
+	<li>Mutual Response (summoners)</li>
+	<li>Blessing of Eva (EE)</li>
+	<li>Smart Cubic (summoners/TK/SK) - some effects are debuffs.</li>
+	<li>Vanguard (knight classes;stats change, locks out a lot of skills for knight classes)</li>
+	<li>Inquisitor (healer classes;stats change?, Surrender to the Holy, Divine Curse, locks out a lot of skills)</li>
+	<li>Evasion Haste (TH) - no numbers.</li>
+	<li>Golem Reinforcement (WS)</li>
+	<li>Bless the Blood (SE) - no numbers.</li>
+	<li>Steal Mana (PP) - no numbers</li>
+	<li>Bleed: An effect that decreases speed has been added. No numbers.</li>
+	<li>Protection of Rune, Protection of Elemental, Protection of Alignment: The passive effect has been increased, and upon activation, M. Def. and attribute defense are increased.</li>
+	<li>Archer's Will & Fighter's Will: The passive effect has been increased. When this effect procs, critical rate and skill power are increased. </li>
+	<li>Spirit of the Cat (WK)</li>
+	<li>Spirit of the Demon (PS)</li>
+	<li>Spirit of the Unicorn (ES)</li>
+	<li>Eye for Eye (Doombringer). No numbers.</li>
+	<li>Shield Deflect Magic (knights). Needs in-game testing.</li>
+	<li>Summon Imperial Phoenix (Phoenix Knight). No numbers.</li>
+	<li>Deflect Magic (Knight classes, Sword Muse, Spectral Dancer). Needs in-game testing.</li>
+	<li>Dance of Berserker (BD). No numbers.</li>
+	</ul>
+<li>Re: A new race, Kamael, has been added.</li>
+	<ul>
+	<li>Kamael tattoo restrictions need to be confirmed.</li>
+	<li>Inspectors are not supposed to be able to go past level 80. I probably won't limit this.</li>
+	<li>Strikeback - Transfers damage received from close range physical attacks and skills back to the opponent. Toggle w/mp consumption. No numbers for this skill.</li>
+	<li>Fast Recovery - passive for HP/MP/CP regen. There are no numbers for this skill.</li>
+	<li>Slow Trap - slow effect. No numbers.</li>
+	<li>Betrayal Mark. Probably not necessary to implement, but no numbers here either.</li>
+	<li>Final Form. I have no idea if its implementation is really accurate or not.</li>
+	<li>Curse of Life Flow. No numbers.</li>
+	<li>Thin Skin. No numbers.</li>
+	<li>Weak Constitution. I don't even know what the hell it does.</li>
+	<li>Mental Impoverish. No numbers.</li>
+	<li>Steal Divinity would require a huge change in the structure of L2Calc. It'll have to wait.</li>
+	<li>MP Regeneration: MP Regeneration has been increased for all Kamael. </li>
+	</ul>
+<li>Re: Kamael-exclusive weapons.</li>
+	<ul>
+	<li>I'm not 100% sure crossbows are correct just yet, but they probably are.</li>
+	</ul>
+<li>The following combat stats have been increased significantly for players who are level 70 and higher: </li>
+	<ul>
+	<li>Critical Rate - requires in-game testing.</li>
+	<li>Magic Resistance- requires in-game testing.</li>
+	<li>These stats will increase even higher for players who are level 78 and higher. </li>
+	</ul>
+<li>Re: Dynasty sets</li>
+	<ul>
+	<li>A lot of Dynasty jewels aren't in.</li>
+	</ul>
+<li>Re: Moirai sets</li>
+	<ul>
+	<li>Moirai heavy shield P.Def. bonus is unknown and not implemented.</li>
+	</ul>	
+<li>Re: Elegia sets</li>
+	<ul>
+	<li>Elegia heavy's "steal opponent's HP on attack" is unknown and not implemented.</li>
+	</ul>
+<li>Re: Attribute system.</li>
+	<ul>
+	<li>The only thing done is L2Calc is weapon attributes. Buffs, armor, toggles - everything else is not implemented.</li>
+	<li>Weapon attribute in L2Calc currently uses numbers provided by Diego Vargas.</li>
+	<li>Weapon attribute needs to be verified in-game. Really, it needs to be done using a summoner.</li>
+	<li>Attribute system works on servitor attacks. Only for the real summoner class. 80% of weapon attribute applies. Does not work if the summoner's weapon is causing a grade penalty.</li>
+	</ul>
+<li>No transformations are implemented.</li>
+	<ul>
+	<li>Cursed Swords</li>
+	<li>Zaken</li>
+	<li>Anakim</li>
+	<li>Benom</li>
+	<li>Gordon</li>
+	<li>Ranku</li>
+	<li>Kechi</li>
+	<li>Demon Prince</li>
+	<li>Aurabird Aurabird Falcon</li>
+	<li>Aurabird Owl</li>
+	<li>Final Flying Form</li>
+		<ul>
+		<li>Normal Healing Potions and Buff Scrolls cannot be used while using the Aurabird transformation.</li>
+		<li>While all classes can learn the skills Aurabird Falcon or Auabird Owl at level 75, Final Flying Form cannot be learned until level 79.</li>
+		</ul>
+	<li>Mercenary transformations</li>
+	</ul>
+<li>Re: Subclass skills.</li>
+	<ul>
+	<li>Lv 80 transformations are not implemented.</li>
+	</ul>
+<li>Re: Weapon SA PVP Bonuses.</li>
+	<ul>
+	<li>A/Dynasty/Icarus/Vesper weapons' SA PVP bonuses are based on research from Diego Vargas.</li>
+	<li>Mid S84/Top S84/Hero weapons' SA PVP bonuses are completely unconfirmed and set to +10%.</li>
+	</ul>
+<li>Re: Melee range damage bonus.</li>
+	<ul>
+	<li>Set in L2Calc for melee weapons excluding polearms. Based on information from Diego Vargas.</li>
+	<li>There is a critical damage boost implemented when attacking from the side and from behind. Also based on information from Diego Vargas.</li>
+	</ul>
+<li>Re: S84 weapons.</li>
+	<ul>
+	<li>HP Regeneration SA's effects are unknown.</li>
+	<li>MP Regeneration SA's effects are unknown.</li>
+	</ul>
+<li>Re: Warsmith buffs - Sharp Edge is assumed to work with Ancient Swords, Polearms, and Rapiers.</li>
+<li>Re: Masterwork equipment - The only ones implemented are Moirai and Vesper armors.</li>
+<li>Re: PVP equipment augmentations - Not implemented. I have the info but haven't added them yet.</li>
+<li>Re: Dual Daggers - accuracy, critical, damage range unverified. Doesn't require Dual Dagger Mastery in L2Calc to equip.</li>
+		<ul>
+		<li>I don't know if regular Dagger Mastery or Assassination work with Dual Daggers. L2Calc assumes neither skill does and therefore Dual Daggers usually have less P.Atk. than regular Daggers.</li>
+		</ul>
+<li>Re: Territory Wars weapons - you're not supposed to be able to augment these weapons.</li>
+<li>Re: Olympiad jewels - None of the effects relevant to L2Calc were listed in-game. They're all assumed to be equivalent to Boss Jewels.</li>
+<li>Re: Counter Critical. Need to add "real dps" calculation for the trigger. Critical damage boost is according to Diego Vargas.</li>
+<li>Re: Benediction. L2Calc handles the CP heal, not the 100% heal itself. It's assumed that this heal works in the same way as HP heals work, but this is not confirmed.</li>
+</ul>
+<hr>
+<b>The following is mostly cut & paste from the official Lineage 2 patch notes. It's a checklist of a billion things L2Calc needs to implement for it to be considered up  to date.</b>
+<hr>
+Gracia Final
+<ul>
+<li>Territory Wars</li>
+	<ul>
+	<li>Supply Box - Belt - Increases defense power (P.Def.)</li>
+	<li>Supply Box - Pouch - When added to a Belt, this item increases the maximum number of inventory slots available.</li>
+	<li>Supply Box - Pin - When combined with a belt, this item will increase a character's maximum weight allowance.</li>
+	<li>One can combine a belt with a pouch or pin, or break the seal on a pouch or pin, through a Weaver. These NPC's are located near the warehouses in Aden and Rune.</li>
+	<li>Necklace - magic defense power + attribute defense power</li>
+	<li>Earring - magic defense power + attribute defense power + skills related to resistance</li>
+	<li>Ring - magic defense power + attribute defense power</li>
+	<li>Talisman - CT Specialization</li>
+	<li>Cloaks</li>
+	<li>Only players with a Knight ranking and above can wear a cloak. In order to wear a cloak, one must be part of a castle-owning clan and be equipped with a full set of Vesper Noble or Dynasty armor.</li>
+	</ul>
+<li>Skills</li>
+	<ul>
+	<li>Champion's Favor (GD,WD,DES,TY,WS,BH,doombringer)</li>
+	<li>Chant of Movement (WC)</li>
+	<li>Combat of Paagrio (OL)</li>
+	<li>Critical of Paagrio (OL)</li>
+	<li>Condition of Paagrio (OL)</li>
+	<li>Even more skill enchants</li>
+	<li>When superior healing occurs from normal heal skills, it now heals the target 3 times more than usual.</li>
+	<li>The ability to regain a certain amount of MP has been added to Orc Mages.</li>
+	<li>The power of the Insane Crusher Skill has increased and Touch of Death-like effects have also been added to the skill.</li>
+	<li>Touch of Shilen has been changed to Spirit of Shilen, and the skill's effect has been changed from a debuff type to a buff type.</li>
+	<li>The acquiring level for the following skills has been changed from level 81 to level 82: Protection of Elemental, and Protection of Alignment.</li>
+	<li>The defense power of the Kamael class has been strengthened as follows: Probability to be hit by a critical attack has been decreased and the critical damage inflicted by enemies has been decreased.</li>
+	<li>Expose Weak Point: Duelist, Dreadnought, Titan, Grand Khavatari, Fortune Seeker, Maestro, Soul Hound, and Doombringer.</li>
+	<li>Lightning Strike: It has been changed so that casting speed, attack speed, and physical speed are reduced for 15 seconds, after which time the player is paralyzed for an additional 10 seconds.</li>
+	<li>Eye of Paagrio: Increase in accuracy and decrease in rate for being hit by a critical attack.</li>
+	<li>Soul of Paagrio: Increase in magic power and magic resistance.</li>
+	<li>The Blue Talisman of Invincibility has been changed to the Blue Talisman of Divine Protection. When used, this talisman will now greatly increase the Pdef and Mdef for a short period of time.</li>
+	<li>The additional affect of decreasing the resistance to polearm weapons has been added to the Provoke skill.</li>
+	<li>Vampiric Mist - In addition to absorbing some HP of nearby enemies, this skill now has a chance to debuff your enemies.</li>
+	<li>Golem armor - power increase</li>
+	<li>Dark Panther - Panther Fatal Claw, Panther Dark Claw, and Panther Cancel.</li>
+	</ul>
+<li>Vesper Noble armor gives additional stat increases and allows for the use of a cloak.</li>
+<li>Belts</li>
+<li>Cloaks: Ancient Cloak, Knight's Cloak, and Holy Spirit's Cloak. No exchange, drop, enchant, attribute, or augment.</li>
+	<ul>
+	<li>Cloaks are class dependant. Each class can only equip one specific cloak.</li>
+	<li>Kamael Faction: Cloak exclusive for Kamael</li>
+	<li>Shield/Force/Weapon/Bard Master Classes excluding Kamael faction: Cloak exclusively for heavy armor.</li>
+	<li>Dagger/Bow Master classes excluding Kamael faction: Cloak exclusively for light armor.</li>
+	<li>Healer/Enchanter/Wizard/Summoner excluding Kamael faction: Cloak exclusively for robe.</li>
+	</ul>
+<li>In PvP situations, evasion has been improved.</li>
+<li>A higher Evasion rate will result in avoiding more hits during PvP. However, the damage received when a hit lands (under these conditions) has been slightly increased.</li>
+<li>A penalty effect increases proportional to the grade level difference as the penalty applies when one wears a weapon of higher level than one's own grade.</li>
+<li>If a character with 20 level wears a C-grade weapon, 1st stage penalty; if a characer with 20 level wears a B-grade weapon, 2nd stage penalty will be applied.</li>
+<li>Stage 1: Hit decreases by 16, critical rate and damage decrease by 10%, attack power and attack speed decrease by 10%, and failure rate for magic attack increases.</li>
+<li>Stage 2: Hit decreases by 16, critical rate and damage decrease by 20%, attack power and attack speed decrease by 10%, and failure rate for magic attack increases.</li>
+<li>Stage 3: Hit decreases by 16, critical rate and damage decrease by 30%, attack power and attack speed decrease by 10%, and failure rate for magic attack increases.</li>
+<li>Stage 4: Hit decreases by 16, critical rate and damage decrease by 40%, attack power and attack speed decrease by 10%, and failure rate for magic attack increases.</li>
+<li>When the grade difference is more than 4 levels, the same penalty as the 4th stage is applied.</li>
+<li>It has been changed so that recovered experience points due to resurrection do not go over 90%. For example, even though recovered experience points through an Apella set and clan skills may be over 90%, actual recovered experience will not be over 90%.</li>
+<li>Enchanted heal effects are mostly approximate. There is an effect, the "SPS/BSPS Effect" which is guessed at. To make it more precise I would need input from people.</li>
+</ul>
+<hr>
+Gracia Epilogue
+<ul>
+<li>Special items are sold by the Territory Manager located in the main city of each territory. Also, S80 territory guard necklace, ring, and earring with special characteristics, and hair accessories have been added.</li>
+<li>Red Talisman - Territory Guard: Maximum CP will be increased, and a certain amount of CP will be recovered.</li>
+<li>Blue Talisman - Lord's Divine Protection: Decrease damage in PvP.</li>
+<li>White Talisman - All Resistance: Increases resistance to all elements.</li>
+<li>Rune Clip Belt: Increases recovery rate of HP and MP.</li>
+<li>Magic Ornament Belt: Increases PvP related abilities.</li>
+<li>Guardian's Strider: Has a higher defense than ordinary striders. Also has special abilities.</li>
+<li>Vanguard Stance</li>
+	<ul>
+	<li>Boost Morale: When using sword/blunt weapon/dual-swords, increase accuracy by 8, critical rate by 150, and critical damage by 30% for 2 minutes.</li>
+	</ul>
+<li>Yet more enchantable skills.</li>
+<li>Skill transfer</li>
+	<ul>
+	<li>This system allows the dedicated healer classes (Cardinal, Eva's Saint, Shillien Saint) to acquire skills from the other two healer classes. For example: Skill Transfer would allow a Cardinal to learn the skill Party Recall. Or it would allow a Shillien Saint to learn the skill Mass Resurrection.</li>
+	<li>Some skills acquired through Skill Transfer can be enchanted.</li>
+	</ul>
+<li>Mage classes that have learned Major Heal can now level this skill at level 75. It now goes to 11.</li>
+<li>Cloaks are now standardized into one category instead of being divided up as heavy armor / light armor / robe.</li>
+<li>A, S Grade Magic Rune Clip Belt:</li>
+	<ul>
+	<li>HP Recovery - Increases HP recovery rate, also additionally increases HP recovery rate while sitting down</li>
+	<li>MP Recovery - Increases MP recovery rate, also additionally increases MP recovery rate while sitting down.</li>
+	</ul>
+<li>A, S Grade Magic Ornament Belt</li>
+	<ul>
+	<li>PvP normal attack - Increases damage of normal attack during PvP.</li>
+	<li>PvP skill attack - Increases damage of skill attack during PvP.</li>
+	<li>PvP defense - Decreases inflicted damage from normal/skill attack during PvP.</li>
+	</ul>
+<li>It is now possible to augment the following items: Necklace of Blessing | Ring of Blessing | Earring of Blessing</li>
+<li>The tooltip for Apella armor descriptions has been changed to reflect current information.</li>
+<li>Masterwork Dark Crystal Helms are now displaying the correct Passive Item skill.</li>
+<li>The tooltip description for the Special Ability Guidance on Vesper Stormers has been corrected.</li>
+<li>An issue involving the PVP Vesper Noble Tunic set bonus has been corrected.</li>
+<li>The Saint Spear PVP weapon tool tip has been corrected.</li>
+<li>New pets</li>
+	<ul>
+	<li>Deinonychus</li>
+	<li>Guardian's Strider</li>
+	</ul>
+<li>The formula used to determine damaged inflicted on monsters level 78+ has changed slightly. The amount of damage inflicted on monsters will be lower if your character is 2 or more levels below that of the level 78+ monster. Damage will not decrease if player is same or higher level of the monster they are attacking.In case of a servitor or a pet, damage will be based on owner's level and not the pet's level.Decreased damage amounts apply for all types of attacks (weapons, skill, etc.).This change does not apply to PVP.</li>
+</ul>
+<hr>
+Freya
+<ul>
+<li>Necklace of Freya</li>
+<li>Blessed Necklace of Freya</li>
+<li>Siege servitor changes: </li>
+	<ul>
+	<li>Siege servitor castle gate and wall attack power has been increased by 2.5 times.</li>
+	</ul>
+<li>S-grade shirts and bracelets have been added to the Court Magician's sale list.</li>
+<li>Hot Spring Potion increases HP/MP/CP regen by 30% for 30 seconds.</li>
+<li>Maximum CP has increased for the following classes:</li>
+	<ul>
+	<li>Sorcerer,Spellsinger,Spellhowler: 20%</li>
+	<li>Bishop: 29%</li>
+	<li>Elven Elder,Shillien Elder: 80%</li>
+	<li>Overlord: 13%</li>
+	</ul>
+<li>Knight Class: Combat Aura and Patience</li>
+<li>Magic Resistance: Magic Defense power has been increased by approximately 20%.</li>
+<li>Any and all buffs applied to a summoner character are automatically applied to the servitor pet also.</li>
+<li>Any and all buffs applied to a summoner character are automatically applied to the servitor pet also.</li>
+<li>Cubic healing powers have increased by 16%.</li>
+</ul>
+<!----right column---->
+ 
+</table>
+</body>
+</html>
+

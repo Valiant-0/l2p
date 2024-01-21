@@ -1,0 +1,340 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css"
+href="style.css" />
+<title>P.Atk.</title>
+</head>
+
+<body><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	
+
+<table border="1" cellpadding="0" width="1000" align="center">
+
+<!----left---->
+<td class="left" width=200 valign=top>
+<script src="sidebar.js"><hr>
+</script>
+</td>
+
+<!----middle---->
+<td class="main" width=800 valign=top bgcolor=white>
+<h2>P.Atk.</h2>
+<hr>
+<ul>
+<li>P.Atk. = (Weapon P.Atk.*Level Modifier*STR Modifier*Mastery Modifier*Armor Bonus*M.Def. Bonus*Buffs Type 1)+Weapon Mastery+Buffs Type 2+Weapon Bonus</li>
+<li>The final P.Atk. is rounded down.</li>
+<li>Still no information on how Weaon SAs apply on P.Atk.</li>
+</ul>
+<hr>
+
+<h3>Weapon P.Atk.</h3>
+<ul>
+If you have no weapon equipped, use:
+<table class="data" align=center>
+<tr><td>type</td><td>P.Atk.</td></tr>
+<tr><td>Fighter</td><td>4</td></tr>
+<tr><td>Mystic</td><td>3</td></tr>
+</table>
+</ul>
+<hr>
+
+<h3>Level Modifier</h3>
+<ul>
+<li>(level+89)/100</li>
+</ul>
+<hr>
+
+<h3>STR Modifier</h3>
+<table class="data" align=center>
+<tr><td>STR</td><td>modifier</td><td>STR</td><td>modifier</td><td>STR</td><td>modifier</td></tr>
+<tr><td>1</td><td>0.30</td><td>18</td><td>0.55</td><td>35</td><td>1.01</td></tr>
+<tr><td>2</td><td>0.31</td><td>19</td><td>0.57</td><td>36</td><td>1.04</td></tr>
+<tr><td>3</td><td>0.32</td><td>20</td><td>0.59</td><td>37</td><td>1.08</td></tr>
+<tr><td>4</td><td>0.34</td><td>21</td><td>0.61</td><td>38</td><td>1.12</td></tr>
+<tr><td>5</td><td>0.35</td><td>22</td><td>0.63</td><td>39</td><td>1.16</td></tr>
+<tr><td>6</td><td>0.36</td><td>23</td><td>0.66</td><td>40</td><td>1.20</td></tr>
+<tr><td>7</td><td>0.37</td><td>24</td><td>0.68</td><td>41</td><td>1.24</td></tr>
+<tr><td>8</td><td>0.39</td><td>25</td><td>0.71</td><td>42</td><td>1.29</td></tr>
+<tr><td>9</td><td>0.40</td><td>26</td><td>0.73</td><td>43</td><td>1.33</td></tr>
+<tr><td>10</td><td>0.42</td><td>27</td><td>0.76</td><td>44</td><td>1.38</td></tr>
+<tr><td>11</td><td>0.43</td><td>28</td><td>0.78</td><td>45</td><td>1.43</td></tr>
+<tr><td>12</td><td>0.45</td><td>29</td><td>0.81</td><td>46</td><td>1.48</td></tr>
+<tr><td>13</td><td>0.46</td><td>30</td><td>0.84</td><td>47</td><td>1.54</td></tr>
+<tr><td>14</td><td>0.48</td><td>31</td><td>0.87</td><td>48</td><td>1.59</td></tr>
+<tr><td>15</td><td>0.50</td><td>32</td><td>0.90</td><td>49</td><td>1.65</td></tr>
+<tr><td>16</td><td>0.51</td><td>33</td><td>0.94</td><td>50</td><td>1.71</td></tr>
+<tr><td>17</td><td>0.53</td><td>34</td><td>0.97</td><td></td><td></td></tr>
+</table>
+<hr>
+
+<h3>Mastery Modifier</h3>
+<ul>
+<li>Do not use Mastery Modifier if you do not have any levels in Weapon Mastery.</li>
+<table class="data" align=center>
+<tr><td>Type</td><td>Formula</td></tr>
+<tr><td>Fighter</td><td>1.085</td></tr>
+<tr><td>Mystic</td><td>1.450</td></tr>
+</table>
+</ul>
+<hr>
+
+<h3>Armor Bonus</h3>
+<table class="data" align=center>
+<tr><td>type</td><td>modifier</td></tr>
+<tr><td>Doom light set</td><td>1.027</td></tr>
+<tr><td>Nightmare Heavy set</td><td>1.04</td></tr>
+<tr><td>Majestic Heavy set</td><td>1.04</td></tr>
+<tr><td>Dark Crystal light set</td><td>1.04</td></tr>
+<tr><td>Majestic light set</td><td>1.08</td></tr>
+<tr><td>Draconic light set</td><td>1.04</td></tr>
+</table>
+<hr>
+
+<h3>M.Def. Bonus</h3>
+<table class="data" align=center>
+<tr><td>type</td><td>modifier</td></tr>
+<tr><td>Necklace of Valakas</td><td>1.04</td></tr>
+</table>
+<hr>
+
+<h3>Buffs/Debuffs/Toggles Type 1</h3>
+<ul>
+<li>If you have more than one of these, you multiply all of your buffs into the formula.</li>
+<li>Please be aware of buffs that do not stack.</li>
+</ul>
+<table class="data" align=center>
+<tr><td>buff</td><td>lvl</td><td>modifier</td></tr>
+<tr><td>Attack Aura</td><td>1</td><td>1.08</td></tr>
+<tr><td>Attack Aura</td><td>2</td><td>1.12</td></tr>
+<tr><td>Bear Spirit Totem</td><td>1</td><td>1.20</td></tr>
+<tr><td>Berserker Spirit</td><td>1</td><td>1.05</td></tr>
+<tr><td>Berserker Spirit</td><td>2</td><td>1.08</td></tr>
+<tr><td>Bison Spirit Totem</td><td>1</td><td>1.43</td></tr>
+<tr><td>Chant of Battle</td><td>1</td><td>1.08</td></tr>
+<tr><td>Chant of Battle</td><td>2</td><td>1.12</td></tr>
+<tr><td>Chant of Battle</td><td>3</td><td>1.15</td></tr>
+<tr><td>Chant of Victory</td><td>1</td><td>1.10</td></tr>
+<tr><td>Clan Might</td><td>1</td><td>1.03</td></tr>
+<tr><td>Clan Might</td><td>2</td><td>1.05</td></tr>
+<tr><td>Clan Might</td><td>3</td><td>1.06</td></tr>
+<tr><td>Curse: Weakness</td><td>1</td><td>0.83</td></tr>
+<tr><td>Curse: Weakness</td><td>2-5</td><td>0.80</td></tr>
+<tr><td>Curse: Weakness</td><td>6+</td><td>0.77</td></tr>
+<tr><td>Dance of Warrior</td><td>1</td><td>1.12</td></tr>
+<tr><td>Demonic Blade Dance</td><td>1-3</td><td>0.9</td></tr>
+<tr><td>Demonic Blade Dance</td><td>4-5</td><td>0.85</td></tr>
+<tr><td>Demonic Blade Dance</td><td>6-7</td><td>0.8</td></tr>
+<tr><td>Demonic Blade Dance</td><td>8-9</td><td>0.75</td></tr>
+<tr><td>Demonic Blade Dance</td><td>10</td><td>0.70</td></tr>
+<tr><td>Final Servitor</td><td>1</td><td>1.10</td></tr>
+<tr><td>Frenzy (1hs/1hb/Pole)</td><td>1</td><td>2.00</td></tr>
+<tr><td>Frenzy (1hs/1hb/Pole)</td><td>2</td><td>2.4976</td></tr>
+<tr><td>Frenzy (1hs/1hb/Pole)</td><td>3</td><td>3.4638</td></tr>
+<tr><td>Frenzy (2hs/2hb)</td><td>1</td><td>2.5026</td></tr>
+<tr><td>Frenzy (2hs/2hb)</td><td>2</td><td>2.9955</td></tr>
+<tr><td>Frenzy (2hs/2hb)</td><td>3</td><td>4.0195</td></tr>
+<tr><td>Frenzy (other)</td><td>1-2</td><td>1.30</td></tr>
+<tr><td>Frenzy (other)</td><td>3</td><td>1.50</td></tr>
+<tr><td>Gift of Queen</td><td>1</td><td>1.06</td></tr>
+<tr><td>Gift of Queen</td><td>2</td><td>1.08</td></tr>
+<tr><td>Gift of Queen</td><td>3+</td><td>1.10</td></tr>
+<tr><td>Greater Might</td><td>1</td><td>1.04</td></tr>
+<tr><td>Greater Might</td><td>2</td><td>1.07</td></tr>
+<tr><td>Greater Might</td><td>3</td><td>1.10</td></tr>
+<tr><td>Herb of Strength</td><td>1</td><td>1.15</td></tr>
+<tr><td>Howl</td><td>1+</td><td>0.77</td></tr>
+<tr><td>Might</td><td>1</td><td>1.08</td></tr>
+<tr><td>Might</td><td>2</td><td>1.12</td></tr>
+<tr><td>Might</td><td>3</td><td>1.15</td></tr>
+<tr><td>Mighty Servitor</td><td>1</td><td>1.08</td></tr>
+<tr><td>Mighty Servitor</td><td>2</td><td>1.12</td></tr>
+<tr><td>Mighty Servitor</td><td>3</td><td>1.15</td></tr>
+<tr><td>Pa'agrian Gift</td><td>1</td><td>1.08</td></tr>
+<tr><td>Pa'agrian Gift</td><td>2</td><td>1.12</td></tr>
+<tr><td>Pa'agrian Gift</td><td>3</td><td>1.15</td></tr>
+<tr><td>Poltergeist Cubic</td><td>1</td><td>0.77</td></tr>
+<tr><td>Power Break</td><td>1-2</td><td>0.80</td></tr>
+<tr><td>Power Break</td><td>3+</td><td>0.77</td></tr>
+<tr><td>Prophecy of Fire</td><td>1</td><td>1.10</td></tr>
+<tr><td>Rabbit Spirit Totem</td><td>1</td><td>0.70</td></tr>
+<tr><td>Rage (1hs/1hb/Pole)</td><td>1</td><td>1.4520</td></tr>
+<tr><td>Rage (1hs/1hb/Pole)</td><td>2</td><td>1.5486</td></tr>
+<tr><td>Rage (2hs/2hb)</td><td>1</td><td>1.5536</td></tr>
+<tr><td>Rage (2hs/2hb)</td><td>2</td><td>1.64085</td></tr>
+<tr><td>Rage (other)</td><td>1-2</td><td>1.20</td></tr>
+<tr><td>Rage of Pa'agrio</td><td>1</td><td>1.05</td></tr>
+<tr><td>Rage of Pa'agrio</td><td>2</td><td>1.08</td></tr>
+<tr><td>Sanctuary</td><td>1+</td><td>0.77</td></tr>
+<tr><td>Seal of Despair</td><td>1</td><td>0.90</td></tr>
+<tr><td>Stealth</td><td>1-3</td><td>0.55</td></tr>
+<tr><td>War Chant</td><td>1</td><td>1.04</td></tr>
+<tr><td>War Chant</td><td>2</td><td>1.07</td></tr>
+<tr><td>War Chant</td><td>3</td><td>1.10</td></tr>
+<tr><td>War Cry</td><td>1</td><td>1.20</td></tr>
+<tr><td>War Cry</td><td>2</td><td>1.25</td></tr>
+<tr><td>Warrior Servitor</td><td>1</td><td>1.10</td></tr>
+</table>
+<hr>
+
+<h3>Weapon Mastery</h3>
+<ul>
+<li>see <a href="weaponmastery.html">here</a></li>
+<li>don't forget that fighters have generic Weapon Mastery from being pre-20</li>
+</ul>
+<hr>
+
+<h3>Buffs/Debuffs/Toggles Type 2</h3>
+<table class="data" align=center>
+<tr><td>buff</td><td>lvl</td><td>modifier</td></tr>
+<tr><td>Archery</td><td>1</td><td>200</td></tr>
+<tr><td>Assassination</td><td>1</td><td>70</td></tr>
+<tr><td>Dead Eye</td><td>1</td><td>124</td></tr>
+<tr><td>Dead Eye</td><td>2</td><td>134</td></tr>
+<tr><td>Dead Eye</td><td>3</td><td>145</td></tr>
+<tr><td>Dead Eye</td><td>4</td><td>155</td></tr>
+<tr><td>Dead Eye</td><td>5</td><td>166</td></tr>
+<tr><td>Dead Eye</td><td>6</td><td>177</td></tr>
+<tr><td>Dead Eye</td><td>7</td><td>188</td></tr>
+<tr><td>Dead Eye</td><td>8</td><td>199</td></tr>
+<tr><td>Final Frenzy</td><td>1</td><td>32.9</td></tr>
+<tr><td>Final Frenzy</td><td>2</td><td>39.4</td></tr>
+<tr><td>Final Frenzy</td><td>3</td><td>46.6</td></tr>
+<tr><td>Final Frenzy</td><td>4</td><td>54.6</td></tr>
+<tr><td>Final Frenzy</td><td>5</td><td>63.3</td></tr>
+<tr><td>Final Frenzy</td><td>6</td><td>72.7</td></tr>
+<tr><td>Final Frenzy</td><td>7</td><td>79.3</td></tr>
+<tr><td>Final Frenzy</td><td>8</td><td>86.1</td></tr>
+<tr><td>Final Frenzy</td><td>9</td><td>93.1</td></tr>
+<tr><td>Final Frenzy</td><td>10</td><td>100.2</td></tr>
+<tr><td>Final Frenzy</td><td>11</td><td>107.5</td></tr>
+<tr><td>Final Frenzy</td><td>12</td><td>114.8</td></tr>
+<tr><td>Final Frenzy</td><td>13</td><td>122.1</td></tr>
+<tr><td>Final Frenzy</td><td>14</td><td>129.3</td></tr>
+<tr><td>Heroic Berserker</td><td>1</td><td>500</td></tr>
+<tr><td>Heroic Valor</td><td>1</td><td>250</td></tr>
+<tr><td>Master of Combat</td><td>1</td><td>80</td></tr>
+<tr><td>Rapid Fire</td><td>1</td><td>62</td></tr>
+<tr><td>Rapid Fire</td><td>2</td><td>67</td></tr>
+<tr><td>Rapid Fire</td><td>3</td><td>73</td></tr>
+<tr><td>Rapid Fire</td><td>4</td><td>78</td></tr>
+<tr><td>Rapid Fire</td><td>5</td><td>83</td></tr>
+<tr><td>Rapid Fire</td><td>6</td><td>89</td></tr>
+<tr><td>Rapid Fire</td><td>7</td><td>94</td></tr>
+<tr><td>Rapid Fire</td><td>8</td><td>100</td></tr>
+<tr><td>Snipe</td><td>1</td><td>124</td></tr>
+<tr><td>Snipe</td><td>2</td><td>134</td></tr>
+<tr><td>Snipe</td><td>3</td><td>145</td></tr>
+<tr><td>Snipe</td><td>4</td><td>155</td></tr>
+<tr><td>Snipe</td><td>5</td><td>166</td></tr>
+<tr><td>Snipe</td><td>6</td><td>177</td></tr>
+<tr><td>Snipe</td><td>7</td><td>188</td></tr>
+<tr><td>Snipe</td><td>8</td><td>199</td></tr>
+<tr><td>Soul Cry</td><td>1</td><td>4.5</td></tr>
+<tr><td>Soul Cry</td><td>2</td><td>14.0</td></tr>
+<tr><td>Soul Cry</td><td>3</td><td>33.5</td></tr>
+<tr><td>Soul Cry</td><td>4</td><td>66.5</td></tr>
+<tr><td>Soul Cry</td><td>5</td><td>90.5</td></tr>
+<tr><td>Soul Cry</td><td>6</td><td>141.5</td></tr>
+<tr><td>Soul Cry</td><td>7</td><td>208.5</td></tr>
+<tr><td>Soul Cry</td><td>8</td><td>247.0</td></tr>
+<tr><td>Soul Cry</td><td>9</td><td>310.0</td></tr>
+<tr><td>Soul Cry</td><td>10</td><td>375.5</td></tr>
+</table>
+<hr>
+
+<h3>Weapon Bonus</h3>
+<ul>
+<li>Weapon SAs actually add a decimal value to your patk despite what the in game descriptions say.</li>
+<li>Critical Damage SA only adds to P.Atk. on a critical hit. There is still debate as to whether this SA is affected by buffs, critical buffs or soulshots.</li>
+<li>I have no idea what's up with Critical Anger, I assume it works like Critical Damage.</li>
+<li>*=I really doubt that's accurate.</li>
+</ul>
+<table class="data" align=center>
+<tr><td>type</td><td>modifier</td></tr>
+<tr><td>Anger SA</td><td></td></tr>
+<tr><td>Battle Axe</td><td>20.44</td></tr>
+<tr><td>Blood Tornado</td><td>38.09</td></tr>
+<tr><td>Deadman's Glory</td><td>30.12</td></tr>
+<tr><td>Doom Crusher</td><td>11%*</td></tr>
+<tr><td>Dwarven Hammer</td><td>26</td></tr>
+<tr><td>Dwarven War Hammer</td><td>22.64</td></tr>
+<tr><td>Elysian Axe</td><td>32.05</td></tr>
+<tr><td>Great Axe</td><td>28.59</td></tr>
+<tr><td>Heavy War Axe</td><td>28.59</td></tr>
+<tr><td>Ice Storm Hammer</td><td>28</td></tr>
+<tr><td>Lance</td><td>24.77</td></tr>
+<tr><td>Orcish Glaive</td><td>20.44</td></tr>
+<tr><td>Scorpion</td><td>24.77</td></tr>
+<tr><td>Scythe</td><td>24.77</td></tr>
+<tr><td>Silver Axe</td><td>20.44</td></tr>
+<tr><td>Skull Graver</td><td>20.44</td></tr>
+<tr><td>Tallum Blade</td><td>31.30</td></tr>
+<tr><td>War Axe</td><td>24.77</td></tr>
+<tr><td>Yaksa Mace</td><td>26.78</td></tr>
+<tr><td></td><td></td></tr>
+<tr><td>Critical Anger SA</td><td></td></tr>
+<tr><td>Stormbringer</td><td>248.56</td></tr>
+<tr><td></td><td></td></tr>
+<tr><td>Critical Damage SA</td><td></td></tr>
+<tr><td>Angel Slayer</td><td>265.00</td></tr>
+<tr><td>Berserker Blade</td><td>269.91</td></tr>
+<tr><td>Caliburs</td><td>213.12</td></tr>
+<tr><td>Caliburs*Caliburs</td><td>127.00</td></tr>
+<tr><td>Crystal Dagger</td><td>140.87</td></tr>
+<tr><td>Dark Legion's Edge</td><td>326.28</td></tr>
+<tr><td>Demon's Sword</td><td>159.93</td></tr>
+<tr><td>Elven Sword*Elven Long Sword</td><td>61.40</td></tr>
+<tr><td>Flamberge</td><td>174.78</td></tr>
+<tr><td>Great Sword</td><td>247.98</td></tr>
+<tr><td>Infernal Master</td><td>297</td></tr>
+<tr><td>Infinity Cleaver</td><td>504.00</td></tr>
+<tr><td>Katana</td><td>194.10</td></tr>
+<tr><td>Katana*Raid Sword</td><td>84.11</td></tr>
+<tr><td>Katana*Sword of Limit</td><td>146.88</td></tr>
+<tr><td>Raid Sword*Sword of Limit</td><td>146.88</td></tr>
+<tr><td>Samurai Longsword</td><td>231.29</td></tr>
+<tr><td>Shamshir*Katana</td><td>84.11</td></tr>
+<tr><td>Shamshir*Sword of Limit</td><td>146.88</td></tr>
+<tr><td>Soul Seperator</td><td>200.79</td></tr>
+<tr><td>Spirit Sword</td><td>194.10</td></tr>
+<tr><td>Spirit Sword*Sword of Limit</td><td>146.88</td></tr>
+<tr><td>Stormbringer*Shamshir</td><td>49.42</td></tr>
+<tr><td>Stormbringer*Sword of Limit</td><td>166.26</td></tr>
+<tr><td>Sword of Damascus</td><td>262.57</td></tr>
+<tr><td>Sword of Delusion*Samurai Long Sword</td><td>133.97</td></tr>
+<tr><td>Sword of Delusion*Sword of Nightmare</td><td>127.00</td></tr>
+<tr><td>Sword of Limit*Sword of Limit</td><td>127.00</td></tr>
+<tr><td>Tsurugi</td><td>213.12</td></tr>
+</table>
+<hr>
+
+<h3>Blunt Mastery Enchanted for Critical Damage</h3>
+<ul>
+<li>Works the same as Critical Damage SA</li>
+</ul>
+
+<table class="data" align=center>
+<tr><td>level</td><td>effect</td><td>level</td><td>effect</td><td>level</td><td>effect</td></tr>
+<tr><td>1</td><td>113</td><td>11</td><td>252</td><td>21</td><td>390</td></tr>
+<tr><td>2</td><td>127</td><td>12</td><td>266</td><td>22</td><td>404</td></tr>
+<tr><td>3</td><td>141</td><td>13</td><td>279</td><td>23</td><td>418</td></tr>
+<tr><td>4</td><td>155</td><td>14</td><td>293</td><td>24</td><td>432</td></tr>
+<tr><td>5</td><td>169</td><td>15</td><td>307</td><td>25</td><td>445</td></tr>
+<tr><td>6</td><td>183</td><td>16</td><td>321</td><td>26</td><td>459</td></tr>
+<tr><td>7</td><td>196</td><td>17</td><td>335</td><td>27</td><td>473</td></tr>
+<tr><td>8</td><td>210</td><td>18</td><td>349</td><td>28</td><td>487</td></tr>
+<tr><td>9</td><td>224</td><td>19</td><td>362</td><td>29</td><td>501</td></tr>
+<tr><td>10</td><td>238</td><td>20</td><td>376</td><td>30</td><td>515</td></tr>
+</table>
+
+<!----right column---->
+
+</table>
+
+</body>
+</html>
+</body>
+</html>
+

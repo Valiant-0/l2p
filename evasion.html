@@ -1,0 +1,144 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css"
+href="style.css" />
+<title>Evasion</title>
+</head>
+
+<body><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	
+
+<table border="1" cellpadding="0" width="1000" align="center">
+
+<!----left---->
+<td class="left" width=200 valign=top>
+<script src="sidebar.js"><hr>
+</script>
+</td>
+
+<!----middle---->
+<td class="main" width=800 valign=top bgcolor=white>
+<h2>Evasion</h2>
+<hr>
+<ul>
+<li>Evasion = ((square root of DEX)*6)+Level+Passives+Weapon Bonus+Armor Bonus+Buffs</li>
+<li>The final Evasion is rounded down.</li>
+</ul>
+<hr>
+<h3>Passives</h3>
+<ul>
+<li>Acrobatic Move does not show up in your status screen.</li>
+<li>It is active as long as you are moving. </li>
+</ul>
+
+<table class="data" align=center>
+<tr><td>skill</td><td>level</td><td>modifier</td></tr>
+<tr><td>Armor Mastery - Fighter</td><td>4</td><td>3</td></tr>
+<tr><td>Light Armor Mastery - Warrior</td><td>1-2</td><td>3</td></tr>
+<tr><td>Light Armor Mastery - Warrior</td><td>3-4</td><td>5</td></tr>
+<tr><td>Light Armor Mastery - Warrior</td><td>5+</td><td>6</td></tr>
+<tr><td>Light Armor Mastery - Rogue</td><td>1-2</td><td>4</td></tr>
+<tr><td>Light Armor Mastery - Rogue</td><td>3-4</td><td>6</td></tr>
+<tr><td>Light Armor Mastery - Rogue</td><td>5+</td><td>7</td></tr>
+<tr><td>Boost Evasion</td><td>1</td><td>2</td></tr>
+<tr><td>Boost Evasion</td><td>2</td><td>3</td></tr>
+<tr><td>Boost Evasion</td><td>3</td><td>4</td></tr>
+<tr><td>Acrobatic Move</td><td>1</td><td>4</td></tr>
+<tr><td>Acrobatic Move</td><td>2</td><td>5</td></tr>
+<tr><td>Acrobatic Move</td><td>3</td><td>6</td></tr>
+<tr><td>Clan Agility</td><td>1</td><td>1</td></tr>
+</table>
+<hr>
+
+<h3>Weapon Bonus</h3>
+<ul>
+<li>Rsk. Evasion is only active at 60% HP or below.</li>
+<li>All SAs add a decimal value despite what the in game description says</li>
+</ul>
+<table class="data" align=center>
+<tr><td>type</td><td>modifier</td></tr>
+<tr><td>Evasion SA</td><td></td></tr>
+<tr><td>Akat Long Bow</td><td>2.68</td></tr>
+<tr><td>Crystallized Ice Bow</td><td>2.95</td></tr>
+<tr><td>Dark Screamer</td><td>2.68</td></tr>
+<tr><td>Dark Elven Long Bow</td><td>2.41</td></tr>
+<tr><td>Elven Bow of Nobility</td><td>2.82</td></tr>
+<tr><td>Grace Dagger</td><td>2.68</td></tr>
+<tr><td>Infinity Fangs</td><td>3.15</td></tr>
+<tr><td>Kris</td><td>2.41</td></tr>
+<tr><td></td><td></td></tr>
+<tr><td>Rsk.Evasion SA</td><td></td></tr>
+<tr><td>Arthro Nail</td><td>6.24</td></tr>
+<tr><td>Crystal Staff</td><td>7.63</td></tr>
+<tr><td>Dragon Grinder</td><td>6.80</td></tr>
+<tr><td>Fist Blade</td><td>6.95</td></tr>
+<tr><td>Ghoul's Staff</td><td>6.60</td></tr>
+<tr><td>Knuckle Duster</td><td>7.29</td></tr>
+<tr><td>Pa'agrio Hammer</td><td>6.95</td></tr>
+<tr><td>Stick of Eternity</td><td>6.95</td></tr>
+<tr><td>Shamshir</td><td>7.29</td></tr>
+</table>
+<hr>
+
+<h3>Armor Bonus</h3>
+<table class="data" align=center>
+<tr><td>type</td><td>modifier</td></tr>
+<tr><td>Clan Oath Brigandine set</td><td>3</td></tr>
+<tr><td>Tempered Mithril set</td><td>4</td></tr>
+<tr><td>Zubei light set</td><td>4</td></tr>
+<tr><td>+6 Light Armor</td><td>2</td></tr>
+</table>
+<hr>
+
+<h3>Buffs/Debuffs/Toggles</h3>
+<ul>
+<li>If you have more than one of these, you add all of your buffs into the formula.</li>
+<li>Please be aware of buffs that do not stack.</li>
+</ul>
+<table class="data" align=center>
+<tr><td>buff</td><td>lvl</td><td>modifier</td></tr>
+<tr><td>Agility</td><td>1</td><td>2</td></tr>
+<tr><td>Agility</td><td>2</td><td>3</td></tr>
+<tr><td>Agility</td><td>3</td><td>4</td></tr>
+<tr><td>Berserker Spirit</td><td>1</td><td>-2</td></tr>
+<tr><td>Berserker Spirit</td><td>2</td><td>-4</td></tr>
+<tr><td>Chant of Evasion</td><td>1</td><td>2</td></tr>
+<tr><td>Chant of Evasion</td><td>2</td><td>3</td></tr>
+<tr><td>Chant of Evasion</td><td>3</td><td>4</td></tr>
+<tr><td>Curse of Abyss</td><td>1</td><td>-6</td></tr>
+<tr><td>Evade Shot</td><td>1</td><td>6</td></tr>
+<tr><td>Heroic Berserker</td><td>1</td><td>-8</td></tr>
+<tr><td>Hot Springs Cholera</td><td>2-4</td><td>-3</td></tr>
+<tr><td>Hot Springs Cholera</td><td>5-7</td><td>-5</td></tr>
+<tr><td>Hot Springs Cholera</td><td>8-9</td><td>-8</td></tr>
+<tr><td>Hot Springs Cholera</td><td>10</td><td>-10</td></tr>
+<tr><td>Majesty</td><td>1</td><td>-2</td></tr>
+<tr><td>Majesty</td><td>2</td><td>-4</td></tr>
+<tr><td>Majesty</td><td>3</td><td>-6</td></tr>
+<tr><td>Ogre Spirit Totem</td><td>1</td><td>-9</td></tr>
+<tr><td>Prophecy of Wind</td><td>1</td><td>4</td></tr>
+<tr><td>Rabbit Spirit Totem</td><td>1</td><td>12</td></tr>
+<tr><td>Rage</td><td>1+</td><td>-3</td></tr>
+<tr><td>Rage of Pa'agrio</td><td>1</td><td>-2</td></tr>
+<tr><td>Rage of Pa'agrio</td><td>2</td><td>-4</td></tr>
+<tr><td>Song of Water</td><td>1</td><td>3</td></tr>
+<tr><td>Stealth</td><td>1</td><td>-12</td></tr>
+<tr><td>Stealth</td><td>2</td><td>-8</td></tr>
+<tr><td>Stealth</td><td>3</td><td>-4</td></tr>
+<tr><td>Tact of Pa'agrio</td><td>1</td><td>2</td></tr>
+<tr><td>Tact of Pa'agrio</td><td>2</td><td>3</td></tr>
+<tr><td>Tact of Pa'agrio</td><td>3</td><td>4</td></tr>
+<tr><td>Ultimate Evasion</td><td>1</td><td>20</td></tr>
+<tr><td>Ultimate Evasion</td><td>2</td><td>25</td></tr>
+</table>
+
+<!----right column---->
+
+</table>
+
+</body>
+</html>
+</body>
+</html>

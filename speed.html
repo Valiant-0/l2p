@@ -1,0 +1,199 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css"
+href="style.css" />
+<title>Speed</title>
+</head>
+
+<body><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	
+
+<table border="1" cellpadding="0" width="1000" align="center">
+
+<!----left---->
+<td class="left" width=200 valign=top>
+<script src="sidebar.js"><hr>
+</script>
+</td>
+
+<!----middle---->
+<td class="main" width=800 valign=top bgcolor=white>
+<h2>Speed</h2>
+<hr>
+<ul>
+<li>Speed = ((Class Base Speed*DEX Modifier*Misc. Buffs)+Basic Buffs+Armor Bonus+Passives</li>
+<li>The final Speed is rounded down.</li>
+</ul>
+<hr>
+
+<h3>Class Base Speed</h3>
+<table class="data" align=center>
+<tr><td>Class</td><td>running</td><td>walking</td></tr>
+<tr><td>Human Fighter</td><td>115</td><td>80</td></tr>
+<tr><td>Human Mystic</td><td>120</td><td>78</td></tr>
+<tr><td>Elven Fighter</td><td>125</td><td>90</td></tr>
+<tr><td>Elven Mystic</td><td>122</td><td>85</td></tr>
+<tr><td>Dark Fighter</td><td>122</td><td>85</td></tr>
+<tr><td>Dark Mystic</td><td>122</td><td>85</td></tr>
+<tr><td>Orc Fighter</td><td>117</td><td>70</td></tr>
+<tr><td>Orc Mystic</td><td>121</td><td>70</td></tr>
+<tr><td>Dwarven Fighter</td><td>115</td><td>80</td></tr>
+</table>
+<hr>
+
+<h3>DEX modifier</h3>
+<table class="data" align=center>
+<tr><td>DEX</td><td>modifier</td><td>DEX</td><td>modifier</td></tr>
+<tr><td>21</td><td>1.01</td><td>33</td><td>1.13</td></tr>
+<tr><td>22</td><td>1.02</td><td>34</td><td>1.14</td></tr>
+<tr><td>23</td><td>1.03</td><td>35</td><td>1.15</td></tr>
+<tr><td>24</td><td>1.04</td><td>36</td><td>1.16</td></tr>
+<tr><td>25</td><td>1.05</td><td>37</td><td>1.17</td></tr>
+<tr><td>26</td><td>1.06</td><td>38</td><td>1.18</td></tr>
+<tr><td>27</td><td>1.07</td><td>39</td><td>1.19</td></tr>
+<tr><td>28</td><td>1.08</td><td>40</td><td>1.20</td></tr>
+<tr><td>29</td><td>1.09</td><td>41</td><td>1.21</td></tr>
+<tr><td>30</td><td>1.10</td><td>42</td><td>1.22</td></tr>
+<tr><td>31</td><td>1.11</td><td>43</td><td>1.24</td></tr>
+<tr><td>32</td><td>1.12</td><td></td><td></td></tr>
+</table>
+<hr>
+
+<h3>Misc. Buffs/Debuffs/Toggles</h3>
+<ul>
+<li>If you have more than one of these, you add all of your buffs into the formula.</li>
+<li>Please be aware of buffs that do not stack.</li>
+</ul>
+
+<table class="data" align=center>
+<tr><td>buff</td><td>lvl</td><td>modifier</td></tr>
+<tr><td>Bear Spirit Totem</td><td>1</td><td>0.70</td></tr>
+<tr><td>Blizzard</td><td>1</td><td>0.55</td></tr>
+<tr><td>Block Wind Walk</td><td>1</td><td>0.90</td></tr>
+<tr><td>Chant of Victory</td><td>1</td><td>0.80</td></tr>
+<tr><td>Cripple</td><td>1-5</td><td>0.70</td></tr>
+<tr><td>Cripple</td><td>6+</td><td>0.55</td></tr>
+<tr><td>Curse of Abyss</td><td>1</td><td>0.90</td></tr>
+<tr><td>Dance of Shadow</td><td>1</td><td>0.50</td></tr>
+<tr><td>Entangle</td><td>1</td><td>0.70</td></tr>
+<tr><td>Entangle</td><td>2+</td><td>0.55</td></tr>
+<tr><td>Fire Vortex</td><td>1</td><td>0.90</td></tr>
+<tr><td>Freezing Strike</td><td>1+</td><td>0.70</td></tr>
+<tr><td>Frost Bolt</td><td>1+</td><td>0.70</td></tr>
+<tr><td>Hamstring</td><td>1+</td><td>0.55</td></tr>
+<tr><td>Hamstring Shot</td><td>1</td><td>0.55</td></tr>
+<tr><td>Ice Bolt</td><td>1-6</td><td>0.70</td></tr>
+<tr><td>Ice Vortex</td><td>1</td><td>0.70</td></tr>
+<tr><td>Mass Block Wind Walk</td><td>1</td><td>0.90</td></tr>
+<tr><td>Mass Slow</td><td>1+</td><td>0.55</td></tr>
+<tr><td>Ogre Spirit Totem</td><td>1</td><td>0.70</td></tr>
+<tr><td>Parry Stance</td><td>1</td><td>0.90</td></tr>
+<tr><td>Prophecy of Fire</td><td>1</td><td>0.90</td></tr>
+<tr><td>Prophecy of Water</td><td>1</td><td>0.80</td></tr>
+<tr><td>Rabbit Spirit Totem</td><td>1</td><td>1.30</td></tr>
+<tr><td>Riposte Stance</td><td>1</td><td>0.90</td></tr>
+<tr><td>Seal of Despair</td><td>1</td><td>0.80</td></tr>
+<tr><td>Seal of Slow</td><td>1</td><td>0.70</td></tr>
+<tr><td>Seal of Slow</td><td>2+</td><td>0.55</td></tr>
+<tr><td>Silent Move</td><td>1</td><td>0.60</td></tr>
+<tr><td>Slow</td><td>1</td><td>0.70</td></tr>
+<tr><td>Slow</td><td>2+</td><td>0.55</td></tr>
+<tr><td>Thrill Fight</td><td>1-2</td><td>0.80</td></tr>
+<tr><td>Warrior Servitor</td><td>1</td><td>0.90</td></tr>
+<tr><td>Wild Defense</td><td>1+</td><td>0.10</td></tr>
+<tr><td>Wind Vortex</td><td>1</td><td>0.90</td></tr>
+<tr><td>Wizard Servitor</td><td>1</td><td>0.80</td></tr>
+<tr><td>Wolf Spirit Totem</td><td>1</td><td>1.20</td></tr>
+</table>
+<hr>
+
+<h3>Armor Bonus</h3>
+<table class="data" align=center>
+<tr><td>type</td><td>Modifier</td></tr>
+<tr><td>Elven Mithril set</td><td>7</td></tr>
+<tr><td>Blue Wolf heavy set</td><td>7</td></tr>
+<tr><td>Doom robe set</td><td>7</td></tr>
+<tr><td>Dark Crystal robe set</td><td>7</td></tr>
+</table>
+<hr>
+
+<h3>Passives</h3>
+<table class="data" align=center>
+<tr><td>skill</td><td>level</td><td>modifier</td></tr>
+<tr><td>Quick Step</td><td>1</td><td>7</td></tr>
+<tr><td>Quick Step</td><td>2</td><td>11</td></tr>
+<tr><td>Agile Movement</td><td>1</td><td>5</td></tr>
+<tr><td>Agile Movement</td><td>2</td><td>10</td></tr>
+<tr><td>Clan March</td><td>1</td><td>3</td></tr>
+<tr><td>Clan March</td><td>2</td><td>5</td></tr>
+<tr><td>Clan March</td><td>3</td><td>6</td></tr>
+</table>
+<hr>
+
+<h3>Basic Buffs</h3>
+<ul>
+<li>If you have more than one of these, you add all of your buffs into the formula.<li>
+<li>Please be aware of buffs that do not stack.</li>
+</ul>
+
+<table class="data" align=center>
+<tr><td>buff</td><td>lvl</td><td>modifier</td></tr>
+<tr><td>Angelic Icon</td><td>1</td><td>10</td></tr>
+<tr><td>Angelic Icon</td><td>2</td><td>20</td></tr>
+<tr><td>Angelic Icon</td><td>3</td><td>30</td></tr>
+<tr><td>Berserker Spirit</td><td>1</td><td>5</td></tr>
+<tr><td>Berserker Spirit</td><td>2</td><td>8</td></tr>
+<tr><td>Blinding Blow</td><td>1+</td><td>40</td></tr>
+<tr><td>Dash</td><td>1</td><td>40</td></tr>
+<tr><td>Dash</td><td>2</td><td>66</td></tr>
+<tr><td>Greater Quick Step Potion</td><td>1</td><td>33</td></tr>
+<tr><td>Haste Potion</td><td>1</td><td>20</td></tr>
+<tr><td>Herb of Speed</td><td>1</td><td>33</td></tr>
+<tr><td>Heroic Berserker</td><td>1</td><td>20</td></tr>
+<tr><td>Heroic Miracle</td><td>1</td><td>5</td></tr>
+<tr><td>Pa'agrian Haste</td><td>1</td><td>20</td></tr>
+<tr><td>Pa'agrian Haste</td><td>2</td><td>33</td></tr>
+<tr><td>Rage of Pa'agrio</td><td>1</td><td>5</td></tr>
+<tr><td>Rage of Pa'agrio</td><td>2</td><td>8</td></tr>
+<tr><td>Servitor Windwalk</td><td>1</td><td>20</td></tr>
+<tr><td>Servitor Windwalk</td><td>2</td><td>33</td></tr>
+<tr><td>Song of Wind</td><td>1</td><td>20</td></tr>
+<tr><td>Sprint</td><td>1</td><td>20</td></tr>
+<tr><td>Sprint</td><td>2</td><td>33</td></tr>
+<tr><td>Wind Walk</td><td>1</td><td>20</td></tr>
+<tr><td>Wind Walk</td><td>2</td><td>33</td></tr>
+<tr><td>Zealot</td><td>1</td><td>10</td></tr>
+<tr><td>Zealot</td><td>2</td><td>20</td></tr>
+<tr><td>Zealot</td><td>3</td><td>30</td></tr>
+</table>
+<hr>
+
+<h3>Blunt Mastery enchanted for speed</h3>
+<ul>
+<li>If you have this, just add it on at the end.</li>
+</ul>
+<table class="data" align=center>
+<tr><td>level</td><td>effect</td><td>level</td><td>effect</td></tr>
+<tr><td>1</td><td>0</td><td>17</td><td>11</td></tr>
+<tr><td>2</td><td>1</td><td>18-19</td><td>12</td></tr>
+<tr><td>3-4</td><td>2</td><td>20</td><td>13</td></tr>
+<tr><td>5</td><td>3</td><td>21-22</td><td>14</td></tr>
+<tr><td>6-7</td><td>4</td><td>23</td><td>15</td></tr>
+<tr><td>8</td><td>5</td><td>24-25</td><td>16</td></tr>
+<tr><td>9-10</td><td>6</td><td>26</td><td>17</td></tr>
+<tr><td>11</td><td>7</td><td>27-28</td><td>18</td></tr>
+<tr><td>12-13</td><td>8</td><td>29</td><td>19</td></tr>
+<tr><td>14</td><td>9</td><td>30</td><td>20</td></tr>
+<tr><td>15-16</td><td>10</td><td></td><td></td></tr>
+</table>
+
+<!----right column---->
+
+</table>
+
+</body>
+</html>
+</body>
+</html>

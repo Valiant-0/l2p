@@ -1,0 +1,185 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css"
+href="style.css" />
+<title>Critical</title>
+</head>
+
+<body><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	
+
+<table border="1" cellpadding="0" width="1000" align="center">
+
+<!----left---->
+<td class="left" width=200 valign=top>
+<script src="sidebar.js"><hr>
+</script>
+</td>
+
+<!----middle---->
+<td class="main" width=800 valign=top bgcolor=white>
+<h2>Critical</h2>
+<hr>
+<ul>
+<li>Base Critical = DEX Modifier*Weapon Critical Modifier<br>
+Final Critical = Base Critical+Passives+Buffs+Weapon Bonus</li>
+<li>The Final Critical is rounded down.</li>
+<li>If you have a Final Critical of higher than 500, it is set as 500.</li>
+</ul>
+<hr>
+
+<h3>DEX modifier</h3>
+<table class="data" align=center>
+<tr><td>DEX</td><td>modifier</td><td>DEX</td><td>modifier</td></tr>
+<tr><td>21</td><td>1.01</td><td>33</td><td>1.13</td></tr>
+<tr><td>22</td><td>1.02</td><td>34</td><td>1.14</td></tr>
+<tr><td>23</td><td>1.03</td><td>35</td><td>1.15</td></tr>
+<tr><td>24</td><td>1.04</td><td>36</td><td>1.16</td></tr>
+<tr><td>25</td><td>1.05</td><td>37</td><td>1.17</td></tr>
+<tr><td>26</td><td>1.06</td><td>38</td><td>1.18</td></tr>
+<tr><td>27</td><td>1.07</td><td>39</td><td>1.19</td></tr>
+<tr><td>28</td><td>1.08</td><td>40</td><td>1.20</td></tr>
+<tr><td>29</td><td>1.09</td><td>41</td><td>1.21</td></tr>
+<tr><td>30</td><td>1.10</td><td>42</td><td>1.22</td></tr>
+<tr><td>31</td><td>1.11</td><td>43</td><td>1.24</td></tr>
+<tr><td>32</td><td>1.12</td><td></td><td></td></tr>
+</table>
+<hr>
+
+<h3>Weapon Critical Modifier</h3>
+<table class="data" align=center>
+<tr><td>Weapon</td><td>modifier</td></tr>
+<tr><td>Bow</td><td>120</td></tr>
+<tr><td>Dagger</td><td>120</td></tr>
+<tr><td>Pole</td><td>80</td></tr>
+<tr><td>Sword</td><td>80</td></tr>
+<tr><td>Blunt</td><td>40</td></tr>
+<tr><td>Fist</td><td>40</td></tr>
+<tr><td>Etc (spellbook)</td><td>40</td></tr>
+<tr><td>Weaponless</td><td>40</td></tr>
+</table>
+<hr>
+
+<h3>Passives</h3>
+<table class="data" align=center>
+<tr><td>skill</td><td>level</td><td>modifier</td></tr>
+<tr><td>Critical Chance</td><td>1</td><td>(base critical*0.2)</td></tr>
+<tr><td>Critical Chance</td><td>2</td><td>(base critical*0.3)</td></tr>
+<tr><td>Critical Chance</td><td>3</td><td>(base critical*0.4)</td></tr>
+</table>
+<hr>
+
+<h3>Buffs/Debuffs/Toggles</h3>
+<ul>
+<li>If you have more than one of these, you add all of your buffs into the formula.</li>
+<li>Please be aware of buffs that do not stack.</li>
+</ul>
+<table class="data" align=center>
+<tr><td>buff</td><td>lvl</td><td>modifier</td></tr>
+<tr><td>Angelic Icon w/Sword or Polearm</td><td>1</td><td>33</td></tr>
+<tr><td>Angelic Icon w/Sword or Polearm</td><td>2</td><td>66</td></tr>
+<tr><td>Angelic Icon w/Sword or Polearm</td><td>3</td><td>100</td></tr>
+<tr><td>Bison Spirit Totem (60%- HP)</td><td>1</td><td>100</td></tr>
+<tr><td>Bison Spirit Totem (30%- HP)</td><td>1</td><td>400</td></tr>
+<tr><td>Blessing of Queen</td><td>1</td><td>(base critical*0.20)</td></tr>
+<tr><td>Blessing of Queen</td><td>2</td><td>(base critical*0.25)</td></tr>
+<tr><td>Blessing of Queen</td><td>3</td><td>(base critical*0.30)</td></tr>
+<tr><td>Chant of Predator</td><td>1</td><td>(base critical*0.2)</td></tr>
+<tr><td>Chant of Predator</td><td>2</td><td>(base critical*0.25)</td></tr>
+<tr><td>Chant of Predator</td><td>3</td><td>(base critical*0.3)</td></tr>
+<tr><td>Chant of Victory</td><td>1</td><td>(base critical*0.2)</td></tr>
+<tr><td>Final Servitor</td><td>1</td><td>(base critical*0.2)</td></tr>
+<tr><td>Focus</td><td>1</td><td>(base critical*0.2)</td></tr>
+<tr><td>Focus</td><td>2</td><td>(base critical*0.25)</td></tr>
+<tr><td>Focus</td><td>3</td><td>(base critical*0.3)</td></tr>
+<tr><td>Focus Death</td><td>1</td><td>(base critical*-0.3)</td></tr>
+<tr><td>Hawk Spirit Totem</td><td>1</td><td>100</td></tr>
+<tr><td>Herb of Critical Attack</td><td>1</td><td>(base critical*0.3)</td></tr>
+<tr><td>Seal of Despair</td><td>1</td><td>(base critical *-0.3)</td></tr>
+<tr><td>Snipe</td><td>1-8</td><td>(base critical*0.2)</td></tr>
+<tr><td>Song of Hunter</td><td>1</td><td>(base critical*1)</td></tr>
+<tr><td>Tribunal</td><td>1-6</td><td>(base critical*-0.3)</td></tr>
+<tr><td>Tribunal</td><td>7-9</td><td>(base critical*-0.4)</td></tr>
+<tr><td>Tribunal</td><td>10</td><td>(base critical*-0.5)</td></tr>
+<tr><td>Zealot (Polearm or Sword)</td><td>1</td><td>33</td></tr>
+<tr><td>Zealot (Polearm or Sword)</td><td>2</td><td>66</td></tr>
+<tr><td>Zealot (Polearm or Sword)</td><td>3</td><td>100</td></tr>
+</table>
+<hr>
+
+<h3>Weapon Bonus</h3>
+<ul>
+<li>Risk Focus weapons only give the critical boost when your HP is at 60% or lower.</li>
+<li>Weapons SAs actually add a decimal value despite what the in game description says.</li>
+</ul>
+<table class="data" align=center>
+<tr><td>type</td><td>modifier</td></tr>
+<tr><td>Focus SA</td><td></td></tr>
+<tr><td>Berserker Blade</td><td>73.3</td></tr>
+<tr><td>Bloody Orchid</td><td>67.3</td></tr>
+<tr><td>Bood Tornado</td><td>61.6</td></tr>
+<tr><td>Caliburs</td><td>77.8</td></tr>
+<tr><td>Caliburs*Sword of Delusion</td><td>54.0</td></tr>
+<tr><td>Dark Elven Dagger</td><td>90.5</td></tr>
+<tr><td>Dark Screamer</td><td>81.2</td></tr>
+<tr><td>Demon Splinter</td><td>80.6</td></tr>
+<tr><td>Draconic Bow</td><td>88.1</td></tr>
+<tr><td>Flamberge</td><td>86.7</td></tr>
+<tr><td>Forgotten Blade</td><td>84.3</td></tr>
+<tr><td>Grace Dagger</td><td>81.2</td></tr>
+<tr><td>Great Sword</td><td>68.9</td></tr>
+<tr><td>Heavens Divider</td><td>84.3</td></tr>
+<tr><td>Ice Storm Hammer</td><td>68</td></tr>
+<tr><td>Infernal Master</td><td>61</td></tr>
+<tr><td>Infinity Cleaver</td><td>78.7</td></tr>
+<tr><td>Infinity Wings</td><td>78.7</td></tr>
+<tr><td>Karik Horn</td><td>77</td></tr>
+<tr><td>Katana</td><td>82.2</td></tr>
+<tr><td>Katana*Sword of Nightmare</td><td>65.0</td></tr>
+<tr><td>Keshanberk</td><td>68.9</td></tr>
+<tr><td>Kris</td><td>71.9</td></tr>
+<tr><td>Meteor Shower</td><td>61.6</td></tr>
+<tr><td>Pa'agrian Sword</td><td>77</td></tr>
+<tr><td>Raid Sword</td><td>82.2</td></tr>
+<tr><td>Raid Sword*Samurai Longsword</td><td>43.7</td></tr>
+<tr><td>Raid Sword*Sword of Nightmare</td><td>65.0</td></tr>
+<tr><td>Samurai Longsword</td><td>73.3</td></tr>
+<tr><td>Shamshir*Raid Sword</td><td>40.4</td></tr>
+<tr><td>Shamshir*Sword of Nightmare</td><td>65.0</td></tr>
+<tr><td>Spirit Sword*Raid Sword</td><td>40.4</td></tr>
+<tr><td>Spirit Sword*Sword of Nightmare</td><td>65.0</td></tr>
+<tr><td>Stormbringer</td><td>86.7</td></tr>
+<tr><td>Stormbringer*Sword of Nightmare</td><td>76.6</td></tr>
+<tr><td>Stormbringer*Spirit Sword</td><td>24.8</td></tr>
+<tr><td>Sword of Damascus</td><td>64.5</td></tr>
+<tr><td>Sword of Delusion</td><td>77.8</td></tr>
+<tr><td>Sword of Limit*Sword of Nightmare</td><td>54.0</td></tr>
+<tr><td>Sword of Nightmare</td><td>77.8</td></tr>
+<tr><td>Sword of Nightmare*Sword of Nightmare</td><td>54.0</td></tr>
+<tr><td>Sword of Revolution*Elven Long Sword</td><td>50.4</td></tr>
+<tr><td>Tsurugi</td><td>77.8</td></tr>
+<tr><td>Tsurugi*Samurai Longsword</td><td>52.6</td></tr>
+<tr><td>Tsurugi*Tsurugi</td><td>54.0</td></tr>
+<tr><td></td><td></td></tr>
+<tr><td>Risk Focus SA</td><td></td></tr>
+<tr><td>Art of Battle Axe</td><td>99.9</td></tr>
+<tr><td>Battle Axe</td><td>138.7</td></tr>
+<tr><td>Big Hammer</td><td>138.7</td></tr>
+<tr><td>Dark Legion's Edge</td><td>130.9</td></tr>
+<tr><td>Heavy War Axe</td><td>107.7</td></tr>
+<tr><td>Silver Axe</td><td>138.7</td></tr>
+<tr><td>Skull Graver</td><td>138.7</td></tr>
+<tr><td>Star Buster</td><td>99</td></tr>
+<tr><td>Yaksa Mace</td><td>115.4</td></tr>
+</table>
+
+<!----right column---->
+
+</table>
+
+</body>
+</html>
+</body>
+</html>

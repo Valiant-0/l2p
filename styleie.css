@@ -1,0 +1,72 @@
+body
+{
+background-color: #444455;
+font-family: verdana;
+color: #222244;
+}
+h1,h2,h3,h4,h5,h6
+{
+text-align: center;
+}
+td.left
+{
+font: 10pt verdana;
+padding: 10px;
+border-width: 0px;
+text-align: left;
+}
+td.main
+{
+font: 10pt verdana;
+padding: 10px;
+border-width: 0px;
+text-align: left;
+background-color: #95d1d2;
+}
+table
+{
+font: 10pt verdana;
+padding: 5;
+text-align: center;
+}
+table.statcalc
+{
+	text-align: left;
+	font: 8pt verdana;
+	border-width: 0px 0px 0px 0px;
+	border-spacing: 0px;
+	border-style: outset outset outset outset;
+	border-color: gray gray gray gray;
+	border-collapse: collapse;
+}
+table.damage
+{
+	text-align: center;
+	font: 8pt verdana;
+	border-width: 0px 0px 0px 0px;
+	border-spacing: 0px;
+	border-style: outset outset outset outset;
+	border-color: gray gray gray gray;
+	border-collapse: collapse;
+}
+select
+{
+	text-align: left;
+	font: 8pt verdana;
+	border-width: 1px 1px 1px 1px;
+	border-spacing: 0px;
+	border-style: outset outset outset outset;
+	border-color: #FFFFFF;
+	border-collapse: collapse;
+}
+input
+{
+	size: 3;
+	border-width: 1px 1px 1px 1px;
+	font-size: 10px;
+	text-align:right;
+}
+A:link
+{
+	color:#5555BB;
+}

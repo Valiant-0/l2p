@@ -1,0 +1,62 @@
+body
+{
+background-color: #E0E0E0;
+font-family: verdana;
+}
+h1,h2,h3,h4
+{
+text-align: center;
+}
+td.left
+{
+font: 10pt verdana;
+padding: 10px;
+border-width: 0px;
+text-align: left;
+}
+td.main
+{
+font: 10pt verdana;
+padding: 10px;
+border-width: 0px;
+text-align: left;
+}
+td.statcalc
+{
+text-align: right;
+}
+td.googlead
+{
+v-align: top;
+}
+table
+{
+font: 10pt verdana;
+padding: 5;
+text-align: center;
+}
+table.statcalc
+{
+font: 10pt verdana;
+text-align: left;
+border: 0;
+cellpadding: 5;
+}
+table.data {
+	text-align: center;
+	font: 8pt verdana;
+	border-width: 1px 1px 1px 1px;
+	border-spacing: 0px;
+	border-style: outset outset outset outset;
+	border-color: gray gray gray gray;
+	border-collapse: collapse;
+	background-color: white;
+}
+table.data td {
+	border-width: 1px 1px 1px 1px;
+	padding: 1px 5px 1px 5px;
+	border-style: inset inset inset inset;
+	border-color: black black black black;
+	background-color: rgb(255, 245, 238);
+	-moz-border-radius: 0px 0px 0px 0px;
+}

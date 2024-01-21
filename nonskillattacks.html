@@ -1,0 +1,221 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css"
+href="style.css" />
+<title>Non-Skill Attacks</title>
+</head>
+
+<body><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	
+
+<table border="1" cellpadding="0" width="1000" align="center">
+
+<!----left---->
+<td class="left" width=200 valign=top>
+<script src="sidebar.js"><hr>
+</script>
+</td>
+
+<!----middle---->
+<td class="main" width=800 valign=top bgcolor=white>
+<h2>Non-Skill Attacks</h2>
+<hr>
+<h4>Basics</h4>
+<ul>
+<table class="data" align=center>
+<tr><td>Hits per Second</td><td>Atk. Spd./500</td></tr>
+<tr><td>Hits per Second (Bow)</td><td>(Atk.Spd./1000)*(1500/Weapon Delay)</td></tr>
+<tr><td>Chance to Hit</td><td><a href="#A">see below</a></td></tr>
+<tr><td>Soulshot Damage</td><td>P.Atk.*2</td></tr>
+<tr><td>PVP Bonus</td><td>P.Atk.*1.05</td></tr>
+<tr><td>Average Weapon Damage - Normal Hit</td><td>P.Atk.*70/P.Def.</td></tr>
+<tr><td>Maximum Weapon Damage - Normal Hit</td><td>(P.Atk.*70/P.Def.)*Maximum Damage Modifier</td></tr>
+<tr><td>Minimum Weapon Damage - Normal Hit</td><td>(P.Atk.*70/P.Def.)*Minimum Damage Modifier</td></tr>
+<tr><td>Deflect Arrow/Blunt Weakness/etc</td><td>(Weapon Damage)*(Resistance Multiplier)</td></tr>
+</table>
+<hr>
+
+<h4>Critical Damage</h4>
+<ul>
+<li>Crt. Damage from the weapon SA or passive of the same name and from Vicious Stance are calculated seperately from the rest.</li>
+	<ul>
+	<li>They are not boosted by critical damage buffs, boss jewelry, etc.</li>
+	<li>They are not boosted by soulshots.</li>
+	</ul>
+</ul>
+<table class="data" align=center>
+<tr><td>Average Critical Damage</td><td>(Base Damage)+(Crt. Damage)</td></tr>
+<tr><td>Maximum Critical Damage</td><td>((Base Damage)+(Crt. Damage))*(Maximum Damage Modifier)</td></tr>
+<tr><td>Minimum Critical Damage</td><td>((Base Damage)+(Crt. Damage))*(Minimum Damage Modifier)</td></tr>
+<tr><td>Base Damage</td><td>(P.Atk.*140/P.Def.)*(Buffs & Etc.)</td></tr>
+<tr><td>Crt. Damage (passive, Vicious Stance, weapon SA)</td><td>(sum of P.Atk. added)*70/P.Def.</td></tr>
+<tr><td>Buffs & Etc. (toggles, jewelry)</td><td><a href="#B">See Below</a>.</td></tr>
+</table>
+<hr>
+
+<h4>Damage Modifiers</h4>
+<table class="data" align=center>
+<tr><td>type</td><td>Maximum</td><td>Minimum</td></tr>
+<tr><td>Blunt</td><td>1.20</td><td>0.80</td></tr>
+<tr><td>Bow</td><td>1.05</td><td>0.95</td></tr>
+<tr><td>Dagger</td><td>1.05</td><td>0.95</td></tr>
+<tr><td>Dual Fist</td><td>1.05</td><td>0.95</td></tr>
+<tr><td>Polearm</td><td>1.10</td><td>0.90</td></tr>
+<tr><td>Sword</td><td>1.10</td><td>0.90</td></tr>
+<tr><td>Etc (spellbook)</td><td>1.10</td><td>0.90</td></tr>
+<tr><td>Weaponless</td><td>1.10</td><td>0.90</td></tr>
+</table>
+<hr>
+
+<h4><a name="A">Chance to Hit</a></h4>
+<ul>
+<li>These are basically approximations based on a moderately long <a href="http://www.l2guru.com/forum/showthread.php?t=73721" target=blank>test</a>. Chances are good there are more factors involved than what you see here.</li>
+<li>(Attacker's Accuracy)-(Defender's Evasion) and use the result with the table below.</li>
+</ul>
+<table class="data" align=center>
+<tr><td>Result</td><td>Chance to Hit</td></tr>
+<tr><td>10+</td><td>98%</td></tr>
+<tr><td>9</td><td>97.5%</td></tr>
+<tr><td>8</td><td>97.0%</td></tr>
+<tr><td>7</td><td>96.5%</td></tr>
+<tr><td>6</td><td>96.0%</td></tr>
+<tr><td>5</td><td>95.5%</td></tr>
+<tr><td>4</td><td>94.5%</td></tr>
+<tr><td>3</td><td>93.5%</td></tr>
+<tr><td>2</td><td>92.5%</td></tr>
+<tr><td>1</td><td>91.5%</td></tr>
+<tr><td>0</td><td>90.5%</td></tr>
+<tr><td>-1</td><td>89.0%</td></tr>
+<tr><td>-2</td><td>87.5%</td></tr>
+<tr><td>-3</td><td>86.0%</td></tr>
+<tr><td>-4</td><td>84.5%</td></tr>
+<tr><td>-5</td><td>83.0%</td></tr>
+<tr><td>-6</td><td>81.5%</td></tr>
+<tr><td>-7</td><td>80.0%</td></tr>
+<tr><td>-8</td><td>78.5%</td></tr>
+<tr><td>-9</td><td>77.0%</td></tr>
+<tr><td>-10</td><td>75.5%</td></tr>
+<tr><td>-11</td><td>73.5%</td></tr>
+<tr><td>-12</td><td>71.5%</td></tr>
+<tr><td>-13</td><td>69.5%</td></tr>
+<tr><td>-14</td><td>67.5%</td></tr>
+<tr><td>-15</td><td>65.5%</td></tr>
+<tr><td>-16</td><td>62.5%</td></tr>
+<tr><td>-17</td><td>59.5%</td></tr>
+<tr><td>-18</td><td>56.5%</td></tr>
+<tr><td>-19</td><td>53.5%</td></tr>
+<tr><td>-20</td><td>50.5%</td></tr>
+<tr><td>-21</td><td>45.5%</td></tr>
+<tr><td>-22</td><td>40.5%</td></tr>
+<tr><td>-23</td><td>35.5%</td></tr>
+<tr><td>-24</td><td>30.5%</td></tr>
+<tr><td>-25-</td><td>27.5%</td></tr>
+</table>
+<ul>
+<li>For anything other than direct attacks from the front, multiply the result by the Position Modifier</li>
+	<ul>
+	<li>There are other effects such as being above or below, but these are currently unknown.</li>
+	<li>Chance to Hit has an upward cap of 98% and a lower cap of approximately 27.5%</li>
+	</ul>
+</ul>
+<table class="data" align=center>
+<tr><td>Position</td><td>Modifier</td></tr>
+<tr><td>side</td><td>1.1</td></tr>
+<tr><td>behind</td><td>1.2</td></tr>
+</table>
+<hr>
+
+<h4><a name="B">Critical Damage Boosts</a></h4>
+<ul><li>passive, Vicious Stance, weapon SA</li></ul>
+<table class="data" align=center>
+<tr><td>Skills</td><td>P.Atk.</td><td>Critical Damage SA</td><td>P.Atk.</td></tr>
+<tr><td>Critical Power 1</td><td>32</td><td>Angel Slayer</td><td>265.00</td></tr>
+<tr><td>Critical Power 2</td><td>56</td><td>Berserker Blade</td><td>269.91</td></tr>
+<tr><td>Critical Power 3</td><td>93</td><td>Caliburs</td><td>213.12</td></tr>
+<tr><td>Critical Power 4</td><td>177</td><td>Caliburs*Caliburs</td><td>127.00</td></tr>
+<tr><td>Critical Power 5</td><td>295</td><td>Crystal Dagger</td><td>140.87</td></tr>
+<tr><td>Critical Power 6</td><td>384</td><td>Dark Legion's Edge</td><td>326.28</td></tr>
+<tr><td>Vicious Stance 1</td><td>35</td><td>Demon's Sword</td><td>159.93</td></tr>
+<tr><td>Vicious Stance 2</td><td>48</td><td>Elven Sword*Elven Long Sword</td><td>61.40</td></tr>
+<tr><td>Vicious Stance 3</td><td>64</td><td>Flamberge</td><td>174.78</td></tr>
+<tr><td>Vicious Stance 4</td><td>84</td><td>Great Sword</td><td>247.98</td></tr>
+<tr><td>Vicious Stance 5</td><td>109</td><td>Infernal Master</td><td>297</td></tr>
+<tr><td>Vicious Stance 6</td><td>139</td><td>Infinity Cleaver</td><td>504.00</td></tr>
+<tr><td>Vicious Stance 7</td><td>166</td><td>Katana</td><td>194.10</td></tr>
+<tr><td>Vicious Stance 8</td><td>196</td><td>Katana*Raid Sword</td><td>84.11</td></tr>
+<tr><td>Vicious Stance 9</td><td>229</td><td>Katana*Sword of Limit</td><td>146.88</td></tr>
+<tr><td>Vicious Stance 10</td><td>266</td><td>Raid Sword*Sword of Limit</td><td>146.88</td></tr>
+<tr><td>Vicious Stance 11</td><td>306</td><td>Samurai Longsword</td><td>231.29</td></tr>
+<tr><td>Vicious Stance 12</td><td>349</td><td>Shamshir*Katana</td><td>84.11</td></tr>
+<tr><td>Vicious Stance 13</td><td>379</td><td>Shamshir*Sword of Limit</td><td>146.88</td></tr>
+<tr><td>Vicious Stance 14</td><td>410</td><td>Soul Seperator</td><td>200.79</td></tr>
+<tr><td>Vicious Stance 15</td><td>443</td><td>Spirit Sword</td><td>194.10</td></tr>
+<tr><td>Vicious Stance 16</td><td>475</td><td>Spirit Sword*Sword of Limit</td><td>146.88</td></tr>
+<tr><td>Vicious Stance 17</td><td>509</td><td>Stormbringer*Shamshir</td><td>49.42</td></tr>
+<tr><td>Vicious Stance 18</td><td>542</td><td>Stormbringer*Sword of Limit</td><td>166.26</td></tr>
+<tr><td>Vicious Stance 19</td><td>576</td><td>Sword of Damascus</td><td>262.57</td></tr>
+<tr><td>Vicious Stance 20</td><td>609</td><td>Sword of Delusion*Samurai Long Sword</td><td>133.97</td></tr>
+<tr><td></td><td></td><td>Sword of Delusion*Sword of Nightmare</td><td>127.00</td></tr>
+<tr><td></td><td></td><td>Sword of Limit*Sword of Limit</td><td>127.00</td></tr>
+<tr><td></td><td></td><td>Tsurugi</td><td>213.12</td></tr>
+</table>
+<ul>
+<li>Buffs & Etc. - Multiply these together.</li>
+	<ul>
+	<li>Example - 1.5*1.3*1.2=2.34</li>
+	</ul>
+</ul>
+<table class="data" align=center>
+<tr><td>Name</td><td>Multiplier</td></tr>
+<tr><td>Boss Jewelry</td><td></td></tr>
+<tr><td>Ring of Baium</td><td>1.15</td></tr>
+<tr><td>Ring of Queen Ant</td><td>1.15</td></tr>
+<tr><td>&nbsp</td><td></td></tr>
+<tr><td>Buffs/Toggles</td><td></td></tr>
+<tr><td>Angelic Icon 1</td><td>1.33</td></tr>
+<tr><td>Angelic Icon 2</td><td>1.66</td></tr>
+<tr><td>Angelic Icon 3</td><td>2.00</td></tr>
+<tr><td>Assassin Servitor (behind target only)</td><td>1.20</td></tr>
+<tr><td>Bear Spirit Totem</td><td>1.20</td></tr>
+<tr><td>Blessing of Queen 1</td><td>1.20</td></tr>
+<tr><td>Blessing of Queen 2</td><td>1.22</td></tr>
+<tr><td>Blessing of Queen 3</td><td>1.25</td></tr>
+<tr><td>Chant of Rage 1</td><td>1.30</td></tr>
+<tr><td>Chant of Rage 2</td><td>1.325</td></tr>
+<tr><td>Chant of Rage 3</td><td>1.35</td></tr>
+<tr><td>Chant of Victory</td><td>1.20</td></tr>
+<tr><td>Dance of Fire</td><td>1.35</td></tr>
+<tr><td>Dead Eye 1+</td><td>1.20</td></tr>
+<tr><td>Death Whisper 1</td><td>1.30</td></tr>
+<tr><td>Death Whisper 2</td><td>1.325</td></tr>
+<tr><td>Death Whisper 3</td><td>1.35</td></tr>
+<tr><td>Eye of Pa'agrio</td><td>1.35</td></tr>
+<tr><td>Final Servitor</td><td>1.20</td></tr>
+<tr><td>Focus Attack 1+</td><td>???</td></tr>
+<tr><td>Focus Death (front of target)</td><td>0.70</td></tr>
+<tr><td>Focus Death (behind target)</td><td>1.90</td></tr>
+<tr><td>Focus Power (front of target)</td><td>0.70</td></tr>
+<tr><td>Focus Power (side of target)</td><td>1.30</td></tr>
+<tr><td>Focus Power (behind target)</td><td>1.60</td></tr>
+<tr><td>Hawk Spirit Totem</td><td>1.30</td></tr>
+<tr><td>Judgment 1-5</td><td>0.75</td></tr>
+<tr><td>Judgment 6-9</td><td>0.70</td></tr>
+<tr><td>Judgment 10</td><td>0.65</td></tr>
+<tr><td>Prophecy of Wind (behind target only)</td><td>1.20</td></tr>
+<tr><td>Seal of Despair</td><td>0.70</td></tr>
+<tr><td>Victories of Pa'agrio</td><td>1.20</td></tr>
+<tr><td>Zealot 1 (Fist/Blunt/2hb)</td><td>1.33</td></tr>
+<tr><td>Zealot 2 (Fist/Blunt/2hb)</td><td>1.66</td></tr>
+<tr><td>Zealot 3 (Fist/Blunt/2hb)</td><td>2.00</td></tr>
+</table>
+
+<!----right column---->
+
+</table>
+
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,726 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css"
+href="style.css" />
+<title>Buffs</title>
+</head>
+
+<body><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	
+
+<table border="1" cellpadding="0" width="1000" align="center">
+
+<!----left---->
+<td class="left" width=200 valign=top>
+<script src="sidebar.js"><hr>
+</script>
+</td>
+
+<!----middle---->
+<td class="main" width=800 valign=top bgcolor=white>
+<h2>Buffs</h2>
+
+<p>This section includes the actual amount of stat decrease by debuffs as well as toggles. Shock, Paralyze, Sleep etc are not included because they are redundant.</p>
+
+<hr>
+
+<h4>FAQ</h4>
+
+<p>Read this. As in, don't ignore it. Or you can ignore it and ask stupid questions I already answered and embarrass yourself. Up to you.</p>
+
+<p><b>Q. How come my stat didn't increase by as much as you said it would?</b></p>
+
+<p>A. This is usually, in the case of P.Atk., P.Def., M.Atk., and M.Def., directly because of your Masteries. Masteries are not boosted by buffs on these stats which in the end means you get less than the buff said it would. If you really want it exact, you have no choice right now but to do the math yourself by looking at the <a href="statuswindow.html">Status Window</a> section of this website.</p>
+
+<p>For Critical, the buffs multiply on your base Critical individually and then add together in the end. It may sound complicated but it's not really too bad. Again for more info on that, look at the <a href="critical.html">Status Window</a> section.</p>
+
+<p>Lastly, the game does round numbers down. What your status window shows is only a rounded number. The game actually uses the full decimal value as far as I know.</p>
+
+<p>If, however, you think the buff really is wrong, please send me a message. We'll take a look at what's wrong with it. Everyone makes mistakes, and unlike some places I'll openly admit I do it a lot.</p>
+
+<p><b>Q. How much does Holy Weapon, Dance of Light or Holy Blade boost damage on monsters? Do any of them stack?</b></p>
+
+<p>None of them stack. The damage boost varies depending on which monster you are fighting. First of all the monster must be weak to Holy attribute, which is seen by "Weak to Sacred Attack" in the monster's description. Most monsters with a Holy weakness take 20% more damage from Holy attacks. The exceptions are the Vampires from Forest of the Dead and the Demon type monsters (but not Undead) from Imperial Tomb, Forge of the Gods and the Rift, which only take 10% more damage.</p>
+
+<p><b>Q. It says the "blah blah HP or MP per tick" is this, but in game it's totally different. Why!</b></p>
+
+<p>The numbers you'll see here are just base values. I do not know the formula for per tick stuff at present. The only exception should be the % changes. Percent changes should be correct as listed but it's still confusing because of the regen formulas.</p>
+
+<p><b>Enchanted skills are located <a href="skillenchant.html">here</a>.</b></p>
+
+<hr>
+<table class="data" align=center>
+<tr><td width=200>Acumen 1</td><td>Casting Spd. +15%</td></tr>
+<tr><td>Acumen 2</td><td>Casting Spd. +23%</td></tr>
+<tr><td>Acumen 3</td><td>Casting Spd. +30%</td></tr>
+<tr><td>Advanced Block 1</td><td>Shield P.Def. +60%</td></tr>
+<tr><td>Advanced Block 2</td><td>Shield P.Def. +80%</td></tr>
+<tr><td>Advanced Block 3</td><td>Shield P.Def. +100%</td></tr>
+<tr><td>Agility 1</td><td>Evasion +2</td></tr>
+<tr><td>Agility 2</td><td>Evasion +3</td></tr>
+<tr><td>Agility 3</td><td>Evasion +4</td></tr>
+<tr><td>Angelic Icon 1</td><td>P.Def. +50%, M.Def. +50%, Accuracy +6, Speed +10, Atk. Spd. +10%,<br>HP restored from heals -80%<br>With Fist or any kind of Blunt: Critical Damage +33%<br>With Polearm or any kind of Sword: Critical +33<br>With other weapons, only Speed is raised.</td></tr>
+<tr><td>Angelic Icon 2</td><td>P.Def. +50%, M.Def. +50%, Accuracy +6, Speed +20, Atk. Spd. +20%,<br>HP restored from heals -80%<br>With Fist or any kind of Blunt: Critical Damage +66%<br>With Polearm or any kind of Sword: Critical +66<br>With other weapons, only Speed is raised.</td></tr>
+<tr><td>Angelic Icon 3</td><td>P.Def. +50%, M.Def. +50%, Accuracy +6, Speed +30, Atk. Spd. +30%,<br>HP restored from heals -80%<br>With Fist or any kind of Blunt: Critical Damage +100%<br>With Polearm or any kind of Sword: Critical +100<br>With other weapons, only Speed is raised.</td></tr>
+<tr><td>Arcane Chaos</td><td>Cancel+Debuff resistance -30%, Magic MP Cost +30%, Base MP Regen per tick -24</td></tr>
+<tr><td>Arcane Disruption 1+</td><td>Casting Spd. -23%</td></tr>
+<tr><td>Arcane Protection</td><td>Cancel resistance +30%, Debuff resistance +20%</td></tr>
+<tr><td>Armor Crush</td><td>P.Def. -30%, M.Def. -30%</td></tr>
+<tr><td>Assassin Servitor</td><td>Accuracy +4, Atk Speed +20%, Recover 5% of melee physical damage as HP, Critical +20% from behind, Critical Damage from behind +20%, Debuff Resistance +10%</td></tr>
+<tr><td>Attack Aura 1</td><td>P.Atk. +8%</td></tr>
+<tr><td>Attack Aura 2</td><td>P.Atk. +12%</td></tr>
+<tr><td>Aura Flare</td><td>All Magic Damage -50%, this includes the Aura you cast to get the debuff</td></tr>
+<tr><td>Battle Roar 1</td><td>HP +10%, heals the amount added</td></tr>
+<tr><td>Battle Roar 2</td><td>HP +15%, heals the amount added</td></tr>
+<tr><td>Battle Roar 3</td><td>HP +20%, heals the amount added</td></tr>
+<tr><td>Battle Roar 4</td><td>HP +25%, heals the amount added</td></tr>
+<tr><td>Battle Roar 5</td><td>HP +30%, heals the amount added</td></tr>
+<tr><td>Battle Roar 6</td><td>HP +35%, heals the amount added</td></tr>
+<tr><td>Bear Spirit Totem</td><td>Speed -30%<br>Only if Fists are equipped: P.Atk. +20%, Critical Damage +20%</td></tr>
+<tr><td>Berserker Spirit 1</td><td>P.Atk. +5%, M.Atk. +10%, P.Def. -5%, M.Def. -10%, Evasion -2, Speed +5, Atk. Spd +5%, Casting Spd. +5%</td></tr>
+<tr><td>Berserker Spirit 2</td><td>P.Atk. +8%, M.Atk. +16%, P.Def. -8%, M.Def. -16%, Evasion -4, Speed +8, Atk. Spd +8%, Casting Spd. +8%</td></tr>
+<tr><td>Bison Spirit Totem</td><td>At 60% or less HP - P.Atk. +43%, Accuracy +6, Critical +100<br>At 30% or less HP - Critical changes from +100 to +400.</td></tr>
+<tr><td>Blazing Skin 1</td><td>Reflect 10% of melee range physical damage back on the attacker</td></tr>
+<tr><td>Blazing Skin 2</td><td>Reflect 15% of melee range physical damage back on the attacker</td></tr>
+<tr><td>Blazing Skin 3</td><td>Reflect 20% of melee range physical damage back on the attacker</td></tr>
+<tr><td>Bless Shield 1</td><td>Shield Block Rate +30%</td></tr>
+<tr><td>Bless Shield 2</td><td>Shield Block Rate +40%</td></tr>
+<tr><td>Bless Shield 3</td><td>Shield Block Rate +50%</td></tr>
+<tr><td>Bless Shield 4</td><td>Shield Block Rate +60%</td></tr>
+<tr><td>Bless Shield 5</td><td>Shield Block Rate +70%</td></tr>
+<tr><td>Bless Shield 6</td><td>Shield Block Rate +80%</td></tr>
+<tr><td>Bless the Body 1</td><td>HP +10%</td></tr>
+<tr><td>Bless the Body 2</td><td>HP +15%</td></tr>
+<tr><td>Bless the Body 3</td><td>HP +20%</td></tr>
+<tr><td>Bless the Body 4</td><td>HP +25%</td></tr>
+<tr><td>Bless the Body 5</td><td>HP +30%</td></tr>
+<tr><td>Bless the Body 6</td><td>HP +35%</td></tr>
+<tr><td>Bless the Soul 1</td><td>MP +10%</td></tr>
+<tr><td>Bless the Soul 2</td><td>MP +15%</td></tr>
+<tr><td>Bless the Soul 3</td><td>MP +20%</td></tr>
+<tr><td>Bless the Soul 4</td><td>MP +25%</td></tr>
+<tr><td>Bless the Soul 5</td><td>MP +30%</td></tr>
+<tr><td>Bless the Soul 6</td><td>MP +35%</td></tr>
+<tr><td>Blessing of Noblesse</td><td>this buff falls on death but none of your other buffs do</td></tr>
+<tr><td>Blessing of Queen 1</td><td>Critical +25%, Critical Damage +20%</td></tr>
+<tr><td>Blessing of Queen 2</td><td>Critical +27%, Critical Damage +22%</td></tr>
+<tr><td>Blessing of Queen 3+</td><td>Critical +30%, Critical Damage +25%</td></tr>
+<tr><td>Blessing of Sagittarius</td><td><font color=red>Physical Skill Reuse Delay -??</font></td></tr>
+<tr><td>Blessing of Seraphim 1</td><td>MP regen per tick +30%</td></tr>
+<tr><td>Blessing of Seraphim 2</td><td>MP regen per tick +32%</td></tr>
+<tr><td>Blessing of Seraphim 3+</td><td>MP regen per tick +35%</td></tr>
+<tr><td>Blessings of Pa'agrio 1</td><td>P.Def. +8%</td></tr>
+<tr><td>Blessings of Pa'agrio 2</td><td>P.Def. +12%</td></tr>
+<tr><td>Blessings of Pa'agrio 3</td><td>P.Def. +15%</td></tr>
+<tr><td>Blinding Blow</td><td>Speed +40</td></tr>
+<tr><td>Blizzard</td><td>Speed -45%</td></tr>
+<tr><td>Block Shield</td><td>P.Def. -10%</td></tr>
+<tr><td>Block Wind Walk</td><td>Speed -10%</td></tr>
+<tr><td>Body of Avatar 1</td><td>HP +10%</td></tr>
+<tr><td>Body of Avatar 2</td><td>HP +15%</td></tr>
+<tr><td>Body of Avatar 3</td><td>HP +20%</td></tr>
+<tr><td>Body of Avatar 4</td><td>HP +25%</td></tr>
+<tr><td>Body of Avatar 5</td><td>HP +30%</td></tr>
+<tr><td>Body of Avatar 6</td><td>HP +35%</td></tr>
+<tr><td>Bright Servitor 1</td><td>M.Atk. +55%</td></tr>
+<tr><td>Bright Servitor 2</td><td>M.Atk. +65%</td></tr>
+<tr><td>Bright Servitor 3</td><td>M.Atk. +75%</td></tr>
+<tr><td>Chant of Battle 1</td><td>P.Atk. +8%</td></tr>
+<tr><td>Chant of Battle 2</td><td>P.Atk. +12%</td></tr>
+<tr><td>Chant of Battle 3</td><td>P.Atk. +15%</td></tr>
+<tr><td>Chant of Eagle 1</td><td>Accuracy +2</td></tr>
+<tr><td>Chant of Eagle 2</td><td>Accuracy +3</td></tr>
+<tr><td>Chant of Eagle 3</td><td>Accuracy +4</td></tr>
+<tr><td>Chant of Evasion 1</td><td>Evasion +2</td></tr>
+<tr><td>Chant of Evasion 2</td><td>Evasion +3</td></tr>
+<tr><td>Chant of Evasion 3</td><td>Evasion +4</td></tr>
+<tr><td>Chant of Fire 1</td><td>M.Def. +15%</td></tr>
+<tr><td>Chant of Fire 2</td><td>M.Def. +23%</td></tr>
+<tr><td>Chant of Fire 3</td><td>M.Def. +30%</td></tr>
+<tr><td>Chant of Flame 1</td><td>Casting Spd. +15%</td></tr>
+<tr><td>Chant of Flame 2</td><td>Casting Spd. +23%</td></tr>
+<tr><td>Chant of Flame 3</td><td>Casting Spd. +30%</td></tr>
+<tr><td>Chant of Fury 1</td><td>Atk. Spd. +15%</td></tr>
+<tr><td>Chant of Fury 2</td><td>Atk. Spd. +33%</td></tr>
+<tr><td>Chant of Predator 1</td><td>Critical +20%</td></tr>
+<tr><td>Chant of Predator 2</td><td>Critical +25%</td></tr>
+<tr><td>Chant of Predator 3</td><td>Critical +30%</td></tr>
+<tr><td>Chant of Rage 1</td><td>Critical Damage +30%</td></tr>
+<tr><td>Chant of Rage 2</td><td>Critical Damage +32.5%</td></tr>
+<tr><td>Chant of Rage 3</td><td>Critical Damage +35%</td></tr>
+<tr><td>Chant of Revenge 1</td><td>Reflect 10% of melee range physical damage back on the attacker</td></tr>
+<tr><td>Chant of Revenge 2</td><td>Reflect 15% of melee range physical damage back on the attacker</td></tr>
+<tr><td>Chant of Revenge 3</td><td>Reflect 20% of melee range physical damage back on the attacker</td></tr>
+<tr><td>Chant of Shielding 1</td><td>P.Def. +8%</td></tr>
+<tr><td>Chant of Shielding 2</td><td>P.Def. +12%</td></tr>
+<tr><td>Chant of Shielding 3</td><td>P.Def. +15%</td></tr>
+<tr><td>Chant of Spirit</td><td>Cancel resistance +30%, Debuff resistance +20%</td></tr>
+<tr><td>Chant of Vampire 1</td><td>Recover 6% of melee physical damage as HP</td></tr>
+<tr><td>Chant of Vampire 2</td><td>Recover 7% of melee physical damage as HP</td></tr>
+<tr><td>Chant of Vampire 3</td><td>Recover 8% of melee physical damage as HP</td></tr>
+<tr><td>Chant of Vampire 4</td><td>Recover 9% of melee physical damage as HP</td></tr>
+<tr><td>Chant of Victory</td><td>HP +20%, restores the HP added, Speed -20%, Accuracy +4, P.Def. +20%, P.Atk. +10%, M.Atk. +20%, Atk. Spd. +20%, Critical +20%, Critical Damage +20%, M.Def. +20%, Casting Spd. +20%, Debuff Resistance +20%</td></tr>
+<tr><td>Charm of Luck</td><td>Reduce Drop Penalty</td></tr>
+<tr><td>Clarity 1</td><td><font color=red>Skill MP Consumption -4%</font></td></tr>
+<tr><td>Clarity 2</td><td>Skill MP Consumption -8% on the second cost only (There are 2 seperate times when a skill uses mp - when you use it and when it is finally cast. Clarity acts only on the second cost)</td></tr>
+<tr><td>Clarity 3</td><td><font color=red>Skill MP Consumption -10%</font></td></tr>
+<tr><td>Concentration 1</td><td>Chance of casting interruption -18%</td></tr>
+<tr><td>Concentration 2</td><td>Chance of casting interruption -25%</td></tr>
+<tr><td>Concentration 3</td><td>Chance of casting interruption -36%</td></tr>
+<tr><td>Concentration 4</td><td>Chance of casting interruption -42%</td></tr>
+<tr><td>Concentration 5</td><td>Chance of casting interruption -48%</td></tr>
+<tr><td>Concentration 6</td><td>Chance of casting interruption -53%</td></tr>
+<tr><td>Cripple 1-5</td><td>Speed -30%</td></tr>
+<tr><td>Cripple 6+</td><td>Speed -45%</td></tr>
+<tr><td>Curse Chaos 1</td><td>Accuracy -12</td></tr>
+<tr><td>Curse Chaos 2+</td><td>Accuracy -13</td></tr>
+<tr><td>Curse Disease 1+</td><td>Amount restored from Heals -50%</td></tr>
+<tr><td>Curse Gloom</td><td>M.Def. -23%</td></tr>
+<tr><td>Curse of Abyss</td><td>M.Atk. -30%, P.Def. -30%, Evasion -6, Speed -10%, Casting Spd. -20%, Magic Critical Rate -30%</td></tr>
+<tr><td>Curse of Doom</td><td>Physical+Magical Skill Silence</td></tr>
+<tr><td>Curse of Shade 1</td><td>P.Def. -6%, M.Def. -6%</td></tr>
+<tr><td>Curse of Shade 2</td><td>P.Def. -8%, M.Def. -8%</td></tr>
+<tr><td>Curse of Shade 3+</td><td>P.Def. -10%, M.Def. -10%</td></tr>
+<tr><td>Curse: Weakness 1</td><td>P.Atk. -17%</td></tr>
+<tr><td>Curse: Weakness 2-5</td><td>P.Atk. -20%</td></tr>
+<tr><td>Curse: Weakness 6+</td><td>P.Atk. -23%</td></tr>
+<tr><td>Dance of Aqua Guard</td><td>Resistance to Water attribute +30%</td></tr>
+<tr><td>Dance of Concentration</td><td>Casting Spd. +30%, Chance of casting interruption -30%</td></tr>
+<tr><td>Dance of Earth Guard</td><td>Resistance to Earth attribute +30%</td></tr>
+<tr><td>Dance of Fire</td><td>Critical Damage +35%</td></tr>
+<tr><td>Dance of Fury</td><td>Atk. Spd. +15%</td></tr>
+<tr><td>Dance of Inspiration</td><td>Accuracy +4</td></tr>
+<tr><td>Dance of Light</td><td>Makes physical attacks Holy attribute</td></tr>
+<tr><td>Dance of Medusa</td><td>Petrify</td></tr>
+<tr><td>Dance of Mystic</td><td>M.Atk. +20%</td></tr>
+<tr><td>Dance of Protection</td><td>Fall damage -30%</td></tr>
+<tr><td>Dance of Shadow</td><td>Speed -50%, Avoid Agro 100%</td></tr>
+<tr><td>Dance of Siren</td><td>Magic Critical Rate +200%</td></tr>
+<tr><td>Dance of Vampire</td><td>Recover 8% of melee physical damage as HP</td></tr>
+<tr><td>Dance of Warrior</td><td>P.Atk. +12%</td></tr>
+<tr><td>Dark Vortex</td><td><font color=red>Base MP Regen per tick -12, Resistance to Darkness attribute -30%</font></td></tr>
+<tr><td>Dash 1</td><td>Speed +40</td></tr>
+<tr><td>Dash 2</td><td>Speed +66</td></tr>
+<tr><td>Dead Eye 1</td><td>P.Atk. +124, Accuracy +1, Atk. Spd. -20%, Critical Damage +20%</td></tr>
+<tr><td>Dead Eye 2</td><td>P.Atk. +134, Accuracy +1, Atk. Spd. -20%, Critical Damage +20%</td></tr>
+<tr><td>Dead Eye 3</td><td>P.Atk. +145, Accuracy +2, Atk. Spd. -20%, Critical Damage +20%</td></tr>
+<tr><td>Dead Eye 4</td><td>P.Atk. +155, Accuracy +2, Atk. Spd. -20%, Critical Damage +20%</td></tr>
+<tr><td>Dead Eye 5</td><td>P.Atk. +166, Accuracy +2, Atk. Spd. -20%, Critical Damage +20%</td></tr>
+<tr><td>Dead Eye 6</td><td>P.Atk. +177, Accuracy +3, Atk. Spd. -20%, Critical Damage +20%</td></tr>
+<tr><td>Dead Eye 7</td><td>P.Atk. +188, Accuracy +3, Atk. Spd. -20%, Critical Damage +20%</td></tr>
+<tr><td>Dead Eye 8</td><td>P.Atk. +199, Accuracy +3, Atk. Spd. -20%, Critical Damage +20%</td></tr>
+<tr><td>Death Whisper 1</td><td>Critical Damage +30%</td></tr>
+<tr><td>Death Whisper 2</td><td>Critical Damage +32.5%</td></tr>
+<tr><td>Death Whisper 3</td><td>Critical Damage +35%</td></tr>
+<tr><td>Decrease Weight 1</td><td>Weight Penalty +3000 (does not increase capacity)</td></tr>
+<tr><td>Decrease Weight 1</td><td>Weight Penalty +6000 (does not increase capacity)</td></tr>
+<tr><td>Decrease Weight 1</td><td>Weight Penalty +9000 (does not increase capacity)</td></tr>
+<tr><td>Defense Aura 1</td><td>P.Def. +8%</td></tr>
+<tr><td>Defense Aura 2</td><td>P.Def. +12%</td></tr>
+<tr><td>Deflect Arrow 1</td><td>Bow Damage -16%</td></tr>
+<tr><td>Deflect Arrow 2</td><td>Bow Damage -24%</td></tr>
+<tr><td>Deflect Arrow 3</td><td>Bow Damage -32%</td></tr>
+<tr><td>Deflect Arrow 4</td><td>Bow Damage -40%</td></tr>
+<tr><td>Demon Wind</td><td>Amount restored from Heals -50%</td></tr>
+<tr><td>Demonic Blade Dance 1-3</td><td>P.Atk. -10%, M.Atk. -10%</td></tr>
+<tr><td>Demonic Blade Dance 4-5</td><td>P.Atk. -15%, M.Atk. -15%</td></tr>
+<tr><td>Demonic Blade Dance 6-7</td><td>P.Atk. -20%, M.Atk. -20%</td></tr>
+<tr><td>Demonic Blade Dance 8-9</td><td>P.Atk. -25%, M.Atk. -25%</td></tr>
+<tr><td>Demonic Blade Dance 10</td><td>P.Atk. -30%, M.Atk. -30%</td></tr>
+<tr><td>Divine Protection</td><td>Resistance to Darkness attribute +30%</td></tr>
+<tr><td>Duelist Spirit 1</td><td>Atk. Spd. +8%<font color=red>, PVP damage +??</font></td></tr>
+<tr><td>Duelist Spirit 2</td><td>Atk. Spd. +12%<font color=red>, PVP damage +??</font></td></tr>
+<tr><td>Earth Chant 1</td><td>P.Def. +5%, does not stack with Greater Might or War Chant.</td></tr>
+<tr><td>Earth Chant 2</td><td>P.Def. +10%, does not stack with Greater Might or War Chant.</td></tr>
+<tr><td>Earth Chant 3</td><td>P.Def. +15%, does not stack with Greater Might or War Chant.</td></tr>
+<tr><td>Elemental Protection</td><td>Resistance to Fire attribute +30%, Resistance to Wind, Water, Earth attributes +20%</td></tr>
+<tr><td>Empower 1</td><td>M.Atk. +55%</td></tr>
+<tr><td>Empower 2</td><td>M.Atk. +65%</td></tr>
+<tr><td>(Greater) Empower 3</td><td>M.Atk. +75%</td></tr>
+<tr><td>Entangle 1</td><td>Speed -30%</td></tr>
+<tr><td>Entangle 2+</td><td>Speed -45%</td></tr>
+<tr><td>Evade Shot 1</td><td>Evasion +6</td></tr>
+<tr><td>Eye of Pa'agrio</td><td>Critical Damage +35%</td></tr>
+<tr><td>Fell Swoop</td><td><font color=red>Polearm Arc +??</font></td></tr>
+<tr><td>Final Servitor</td><td>HP +20%, restores the HP added, Speed -20%, Accuracy +4, P.Def. +20%, P.Atk. +10%, Atk. Spd. +20%, Critical +20%, Critical Damage +20%, M.Def. +20%, Casting Spd. +20%, Debuff Resistance +20%</td></tr>
+<tr><td>Fire Vortex</td><td>Speed -10%, Atk. Spd. -30%, Casting Spd. -10%, MP Regen per tick -12, Resistance to Fire attribute -20%, <font color=red>Resistance to Water attribute +??%</font></td></tr>
+<tr><td>Focus 1</td><td>Critical +20%</td></tr>
+<tr><td>Focus 2</td><td>Critical +25%</td></tr>
+<tr><td>Focus 3</td><td>Critical +30%</td></tr>
+<tr><td>Focus Attack 1-2</td><td>Accuracy +3<font color=blue>, Critical Damage +10-15%, Polearm can hit only 1 target</td></tr></font>
+<tr><td>Focus Attack 3</td><td>Accuracy +4<font color=blue>, Critical Damage +?, Polearm can hit only 1 target</td></tr></font>
+<tr><td>Focus Attack 4</td><td>Accuracy +5<font color=blue>, Critical Damage +?, Polearm can hit only 1 target</td></tr></font>
+<tr><td>Focus Attack 5</td><td><font color=blue>Accuracy +?, Critical Damage +?, Polearm can hit only 1 target</td></tr></font>
+<tr><td>Focus Chance</td><td>Critical Chance from front -30%, Critical Chance from side +30%,<br> Critical Chance from back +60%<br>This includes the "blow" series of skills.</td></tr>
+<tr><td>Focus Death</td><td>Critical -30%, Blow land rate +60%, Critical Damage from front -30%, Critical Damage from back +90%</td></tr>
+<tr><td>Focus Power</td><td>Critical Damage from front -30%, Critical Damage from side +30%, Critical Damage from back +60%</td></tr>
+<tr><td>Fortune of Noblesse</td><td>drop penalty reduced</td></tr>
+<tr><td>Freezing Skin 1</td><td>Reflect 10% of melee range physical damage back on the attacker</td></tr>
+<tr><td>Freezing Skin 2</td><td>Reflect 15% of melee range physical damage back on the attacker</td></tr>
+<tr><td>Freezing Skin 3</td><td>Reflect 20% of melee range physical damage back on the attacker</td></tr>
+<tr><td>Freezing Strike 1+</td><td>Speed -30%</td></tr>
+<tr><td>Frenzy 1</td><td>With Sword, Polearm or Blunt: P.Atk. +100%<br>With 2hs/2hb: Accuracy +4, P.Atk. +150.26%<br>With other weapon: P.Atk. +30%</td></tr>
+<tr><td>Frenzy 2</td><td>With Sword, Polearm or Blunt: P.Atk. +149.76%<br>With 2hs/2hb: Accuracy +4, P.Atk. +199.55%<br>With other weapon: P.Atk. +30%</td></tr>
+<tr><td>Frenzy 3</td><td>With Sword, Polearm or Blunt: P.Atk. +246.38%<br>With 2hs/2hb: Accuracy +6, P.Atk. +301.95%<br>With other weapon: P.Atk. +50%</td></tr>
+<tr><td>Frost Bolt 1+</td><td>Speed -30%</td></tr>
+<tr><td>Gift of Queen 1</td><td>P.Atk. +6%, Accuracy +2</td></tr>
+<tr><td>Gift of Queen 2</td><td>P.Atk. +8%, Accuracy +2</td></tr>
+<tr><td>Gift of Queen 3+</td><td>P.Atk. +10%, Accuracy +2</td></tr>
+<tr><td>Gift of Seraphim 1</td><td>Reuse Delay -30%</td></tr>
+<tr><td>Gift of Seraphim 2</td><td>Reuse Delay -32%</td></tr>
+<tr><td>Gift of Seraphim 3+</td><td>Reuse Delay -35%</td></tr>
+<tr><td>Glory of Pa'agrio 1</td><td>M.Def. +15%</td></tr>
+<tr><td>Glory of Pa'agrio 2</td><td>M.Def. +23%</td></tr>
+<tr><td>Glory of Pa'agrio 3</td><td>M.Def. +30%</td></tr>
+<tr><td>Greater Magic Haste Potion</td><td>Casting Spd. +30%</td></tr>
+<tr><td>Greater Might 1</td><td>P.Atk. +4%, does not stack with Greater Shield or Earth Chant.</td></tr>
+<tr><td>Greater Might 2</td><td>P.Atk. +7%, does not stack with Greater Shield or Earth Chant.</td></tr>
+<tr><td>Greater Might 3</td><td>P.Atk. +10%, does not stack with Greater Shield or Eart Chant.</td></tr>
+<tr><td>Greater Shield 1</td><td>P.Def. +5%, does not stack with Greater Might or War Chant.</td></tr>
+<tr><td>Greater Shield 2</td><td>P.Def. +10%, does not stack with Greater Might or War Chant.</td></tr>
+<tr><td>Greater Shield 3</td><td>P.Def. +15%, does not stack with Greater Might or War Chant.</td></tr>
+<tr><td>Greater Quick Step Potion</td><td>Speed +33</td></tr>
+<tr><td>Greater Swift Attack Potion</td><td>Atk. Spd. +33%</td></tr>
+<tr><td>Guidance 1</td><td>Accuracy +2</td></tr>
+<tr><td>Guidance 2</td><td>Accuracy +3</td></tr>
+<tr><td>Guidance 3</td><td>Accuracy +4</td></tr>
+<tr><td>Guts 1</td><td>P.Def. +100%</td></tr>
+<tr><td>Guts 2</td><td>P.Def. +150%</td></tr>
+<tr><td>Guts 3</td><td>P.Def. +200%</td></tr>
+<tr><td>Hamstring 1+</td><td>Speed -45%</td></tr>
+<tr><td>Hamstring Shot</td><td>Speed -45%</td></tr>
+<tr><td>Haste 1</td><td>Atk. Spd. +15%</td></tr>
+<tr><td>Haste 2</td><td>Atk. Spd. +33%</td></tr>
+<tr><td>Haste Potion</td><td>Speed +20</td></tr>
+<tr><td>Hawk Eye 1</td><td>P.Def. -10%, Accuracy +6</td></tr>
+<tr><td>Hawk Eye 2</td><td>P.Def. -10%, Accuracy +8</td></tr>
+<tr><td>Hawk Eye 3</td><td>P.Def. -10%, Accuracy +10</td></tr>
+<tr><td>Hawk Spirit Totem</td><td>Only if a Fist weapon is equipped: Accuracy +6, Critical +100, Critical Damage +30%</td></tr>
+<tr><td>Herb of Atk. Speed</td><td>Atk. Spd. +33%</td></tr>
+<tr><td>Herb of Casting Spd.</td><td>Casting Spd. +30%</td></tr>
+<tr><td>Herb of Critical Attack</td><td>Critical +30%</td></tr>
+<tr><td>Herb of Magic</td><td>M.Atk. +75%</td></tr>
+<tr><td>Herb of Speed</td><td>Speed +33</td></tr>
+<tr><td>Herb of Strength</td><td>P.Atk. +15%</td></tr>
+<tr><td>Heroic Berserker</td><td>Accuracy +8, Evasion -8, P.Atk. +500, M.Atk. +500, P.Def. -25%, M.Def. -25, Atk. Speed +100, Casting Spd. +100, Speed +20, <font color=blue>Cancel/Debuff resistance +??, Heals are ??% more effective</td></tr></font>
+<tr><td>Heroic Dread</td><td>Speed +52% (this is a fear debuff)</td></tr>
+<tr><td>Heroic Grandeur</td><td>P.Def. -50%, M.Def. -50%, Evasion -16, Shield Block Rate -??, Magic Resistance (?) +??, Blocks all Physical and Magical effects (?)</td></tr></font>
+<tr><td>Heroic Miracle</td><td>P.Def. +5400, M.Def. +4050, Speed +5, <font color=blue>Cancel resistance +??, requires Shield to function</font></td></tr>
+<tr><td>Heroic Valor</td><td>P.Atk. +250, P.Def. +500, <font color=blue>Cancel resistance +??</td></tr></font>
+<tr><td>Hex</td><td>P.Def. -23%</td></tr>
+<tr><td>Holy Resistance 1</td><td>Resistance to Holy attribute +15%</td></tr>
+<tr><td>Holy Resistance 2</td><td>Resistance to Holy attribute +23%</td></tr>
+<tr><td>Holy Resistance 3</td><td>Resistance to Holy attribute +30%</td></tr>
+<tr><td>Holy Weapon</td><td>Makes physical attacks Holy attribute</td></tr>
+<tr><td>Hot Springs Cholera 1</td><td>Accuracy +3</td></tr>
+<tr><td>Hot Springs Cholera 2</td><td>Accuracy +6, Evasion -3</td></tr>
+<tr><td>Hot Springs Cholera 3</td><td>Accuracy +8, Evasion -3</td></tr>
+<tr><td>Hot Springs Cholera 4</td><td>Accuracy +10, Evasion -3</td></tr>
+<tr><td>Hot Springs Cholera 5</td><td>Accuracy +6, Evasion -5</td></tr>
+<tr><td>Hot Springs Cholera 6-7</td><td>Evasion -5</td></tr>
+<tr><td>Hot Springs Cholera 8-9</td><td>Evasion -8</td></tr>
+<tr><td>Hot Springs Cholera 10</td><td>Evasion -10</td></tr>
+<tr><td>Hot Springs Malaria 1</td><td>Casting Spd. +4%</td></tr>
+<tr><td>Hot Springs Malaria 2</td><td>Casting Spd. +8%, MP Cost -4%</td></tr>
+<tr><td>Hot Springs Malaria 3</td><td>Casting Spd. +12%, MP Cost -4%</td></tr>
+<tr><td>Hot Springs Malaria 4</td><td>Casting Spd. +16%, MP Cost -4%</td></tr>
+<tr><td>Hot Springs Malaria 5</td><td>Casting Spd. +8%, MP Cost -8%</td></tr>
+<tr><td>Hot Springs Malaria 6-7</td><td>MP Cost -8%</td></tr>
+<tr><td>Hot Springs Malaria 8-9</td><td>MP Cost -12%</td></tr>
+<tr><td>Hot Springs Malaria 10</td><td>MP Cost -16%</td></tr>
+<tr><td>Howl</td><td>P.Atk. -23%</td></tr>
+<tr><td>Ice Bolt 1+</td><td>Speed -30%</td></tr>
+<tr><td>Ice Vortex</td><td>Speed -30%, Atk. Spd. -10%, Casting Spd. -10%, MP Regen per tick -12, Resistance to Water attribute -20%, <font color=red>Resistance to Fire attribute +??%</font></td></tr>
+<tr><td>Infernal Weapon</td><td><font color=red>Makes physical attacks Fire attribute</font></td></tr>
+<tr><td>Invigor 1</td><td>Resistance to Bleed attribute +30%</td></tr>
+<tr><td>Invigor 2</td><td>Resistance to Bleed attribute +40%</td></tr>
+<tr><td>Invigor 3</td><td>Resistance to Bleed attribute +50%</td></tr>
+<tr><td>Invocation</td><td>Cannot move or sit with this skill<br>Let me know if anyone reading this gets different numbers than what is listed here. It may be based on things like MEN, which would cause the actual regen to vary.</td></tr>
+<tr><td>Invocation 1</td><td>P.Def. -90%, MP Regens 100 points per tick 8 times.</td></tr>
+<tr><td>Invocation 2</td><td>P.Def. -90%, MP Regens ~109.7 points per tick 8 times.</td></tr>
+<tr><td>Invocation 3+</td><td>P.Def. -90%, MP Regens ??? points per tick 8 times.</td></tr>
+<tr><td>Iron Will 1</td><td>M.Def. +15%</td></tr>
+<tr><td>Iron Will 2</td><td>M.Def. +23%</td></tr>
+<tr><td>Iron Will 3</td><td>M.Def. +30%</td></tr>
+<tr><td>Judgment 1-5</td><td>Critical Damage -25%</td></tr>
+<tr><td>Judgment 6-9</td><td>Critical Damage -30%</td></tr>
+<tr><td>Judgment 10</td><td>Critical Damage -35%</td></tr>
+<tr><td>Kiss of Eva 1</td><td>Breath Guage +400%</td></tr>
+<tr><td>Kiss of Eva 2</td><td>Breath Guage +600%</td></tr>
+<tr><td>Light Vortex</td><td>Accuracy -6, MP Regen per tick -12, Resistance to Holy attribute -30%</td></tr>
+<tr><td>Lionheart 1</td><td>Resistance to Shock, Hold, Sleep, Paralyze attributes +40%<font color=red>, Cancel Resistance +??</font></td></tr>
+<tr><td>Lionheart 2</td><td>Resistance to Shock, Hold, Sleep, Paralyze attributes +60%<font color=red>, Cancel Resistance +??</font></td></tr>
+<tr><td>Lionheart 3</td><td>Resistance to Shock, Hold, Sleep, Paralyze attributes +80%<font color=red>, Cancel Resistance +??</font></td></tr>
+<tr><td>Magic Barrier 1</td><td>M.Def. +23%</td></tr>
+<tr><td>Magic Barrier 2</td><td>M.Def. +30%</td></tr>
+<tr><td>Magic Haste Potion</td><td>Casting Spd. +23%</td></tr>
+<tr><td>Magical Backfire</td><td><font color=red>Skill MP Consumption +??</font></td></tr>
+<tr><td>Magical Mirror</td><td>Reflect magical debuffs at a 30% probability, physical at a 10% probability.</td></tr>
+<tr><td>Majesty 1</td><td>P.Def. +7%, Evasion -2</td></tr>
+<tr><td>Majesty 2</td><td>P.Def. +11%, Evasion -4</td></tr>
+<tr><td>Majesty 3</td><td>P.Def. +15%, Evasion -6</td></tr>
+<tr><td>Mana Regeneration 1</td><td>MP Regen per tick +1.72</td></tr>
+<tr><td>Mana Regeneration 2</td><td>MP Regen per tick +2.16</td></tr>
+<tr><td>Mana Regeneration 3</td><td>MP Regen per tick +2.74</td></tr>
+<tr><td>Mana Regeneration 4</td><td>MP Regen per tick +3.09</td></tr>
+<tr><td>Mass Block Wind Walk</td><td>Speed -10%</td></tr>
+<tr><td>Mass Curse of Shade 1</td><td>P.Def. -6%, M.Def. -6%</td></tr>
+<tr><td>Mass Curse of Shade 2</td><td>P.Def. -8%, M.Def. -8%</td></tr>
+<tr><td>Mass Curse of Shade 3+</td><td>P.Def. -10%, M.Def. -10%</td></tr>
+<tr><td>Mass Gloom</td><td>M.Def. -23%</td></tr>
+<tr><td>Mass Shield Block</td><td>P.Def. -10%</td></tr>
+<tr><td>Mass Slow 1+</td><td>Speed -45%</td></tr>
+<tr><td><font color=red>Mass Surrender to Fire</td><td>Resistance to Fire attribute -??, <font color=red>Resistance to Water attribute +??%</font></font></td></tr>
+<tr><td><font color=red>Mass Surrender to Water</td><td>Resistance to Water attribute -??, <font color=red>Resistance to Fire attribute +??%</font></font></td></tr>
+<tr><td><font color=red>Mass Surrender to Wind</td><td>Resistance to Wind attribute -??, <font color=red>Resistance to Earth attribute +??%</font></font></td></tr>
+<tr><td>Mental Shield 1</td><td><font color=red>Resistance to Hold, Sleep, Derangement +50%</font></td></tr>
+<tr><td>Mental Shield 2</td><td><font color=red>Resistance to Hold, Sleep, Derangement +60%</font></td></tr>
+<tr><td>Mental Shield 3</td><td><font color=red>Resistance to Hold, Sleep, Derangement +70%</font></td></tr>
+<tr><td>Mental Shield 4</td><td><font color=red>Resistance to Hold, Sleep, Derangement +80%</font></td></tr>
+<tr><td>Might 1</td><td>P.Atk. +8%</td></tr>
+<tr><td>Might 2</td><td>P.Atk. +12%</td></tr>
+<tr><td>Might 3</td><td>P.Atk. +15%</td></tr>
+<tr><td>Mighty Servitor 1</td><td>P.Atk. +8%</td></tr>
+<tr><td>Mighty Servitor 2</td><td>P.Atk. +12%</td></tr>
+<tr><td>Mighty Servitor 3</td><td>P.Atk. +15%</td></tr>
+<tr><td>Ogre Spirit Totem</td><td>P.Def. +30%, M.Def. +30%, Evasion -9, Speed -30%</td></tr>
+<tr><td>Pa'agrian Gift 1</td><td>P.Atk. +8%</td></tr>
+<tr><td>Pa'agrian Gift 2</td><td>P.Atk. +12%</td></tr>
+<tr><td>Pa'agrian Gift 3</td><td>P.Atk. +15%</td></tr>
+<tr><td>Pa'agrian Haste 1</td><td>Speed +20</td></tr>
+<tr><td>Pa'agrian Haste 2</td><td>Speed +33</td></tr>
+<tr><td>Pa'agrio's Fist</td><td>CP +800</td></tr>
+<tr><td>Phantom Cubic</td><td>P.Atk. -23% or P.Def. -23% or Atk. Spd. -23%</td></tr>
+<tr><td>Physical Mirror</td><td>Reflect physical debuffs at a 30% probabilitym magical at a 10% probability.</td></tr>
+<tr><td>Potion of Alacrity</td><td>Atk. Spd. +15%</td></tr>
+<tr><td>Power Break 1-2</td><td>P.Atk. -20%</td></tr>
+<tr><td>Power Break 3+</td><td>P.Atk. -23%</td></tr>
+<tr><td>Prayer 1</td><td>Heal Power +8%</td></tr>
+<tr><td>Prayer 2</td><td>Heal Power +10%</td></tr>
+<tr><td>Prayer 3</td><td>Heal Power +12%</td></tr>
+<tr><td>Prophecy of Fire</td><td>HP +20%, HP regen per tick +20%, P.Atk. +10%, P.Def. +20%, Accuracy +4, Speed -10%, Atk. Spd. +20%, Debuff Resistance +10%</td></tr>
+<tr><td>Prophecy of Water</td><td>MP regen per tick +20%, M.Atk. +20%, M.Def. +20%, Speed -20%, Casting Spd. +20%, Magic Critical Rate +100%, Debuff Resistance +10%</td></tr>
+<tr><td>Prophecy of Wind</td><td>Accuracy +4, Evasion +4, Atk Speed +20%, Recover 5% of melee physical damage as HP, Critical +20% from behind, Critical Damage from behind +20%, Debuff Resistance +10%</td></tr>
+<tr><td>Psycho Symphony 1-3</td><td>Speed -10%, Atk. Spd. -10%, Casting Spd. -10%</td></tr>
+<tr><td>Psycho Symphony 4-5</td><td>Speed -10%, Atk. Spd. -15%, Casting Spd. -15%</td></tr>
+<tr><td>Psycho Symphony 6-7</td><td>Speed -10%, Atk. Spd. -20%, Casting Spd. -20%</td></tr>
+<tr><td>Psycho Symphony 8-9</td><td>Speed -10%, Atk. Spd. -25%, Casting Spd. -25%</td></tr>
+<tr><td>Psycho Symphony 10</td><td>Speed -10%, Atk. Spd. -30%, Casting Spd. -30%</td></tr>
+<tr><td>Puma Spirit Totem</td><td>Only when Fists are equipped: Atk. Spd. +20%, Accuracy +6</td></tr>
+<tr><td>Rabbit Spirit Totem</td><td>P.Atk. -30%, Evasion +12, Speed +30%, Accuracy -9</td></tr>
+<tr><td>Rage 1</td><td>Evasion -3, P.Def. -20%<br>With Sword/Blunt/Polearm: P.Atk. +45.2%<br>With 2hs/2hb: Accuracy +2, P.Atk. +55.36%<br>With other weapon: P.Atk. +20%</td></tr>
+<tr><td>Rage 2</td><td>Evasion -3, P.Def. -20%<br>With Sword/Blunt/Polearm: P.Atk. +54.86%<br>With 2hs/2hb: Accuracy +4, P.Atk. +64.085%<br>With other weapon: P.Atk. +20%</td></tr>
+<tr><td>Rage of Pa'agrio 1</td><td>P.Atk. +5%, M.Atk. +10%, P.Def. -5%, M.Def. -10%, Evasion -2, Speed +5, Atk. Spd +5%, Casting Spd. +5%</td></tr>
+<tr><td>Rage of Pa'agrio 2</td><td>P.Atk. +8%, M.Atk. +16%, P.Def. -8%, M.Def. -16%, Evasion -4, Speed +8, Atk. Spd +8%, Casting Spd. +8%</td></tr>
+<tr><td>Rapid Fire 1</td><td>P.Atk. +62, Atk. Spd. +20%, bow range becomes 600, only works with a bow</td></tr>
+<tr><td>Rapid Fire 2</td><td>P.Atk. +67, Atk. Spd. +20%, bow range becomes 600, only works with a bow</td></tr>
+<tr><td>Rapid Fire 3</td><td>P.Atk. +73, Atk. Spd. +20%, bow range becomes 600, only works with a bow</td></tr>
+<tr><td>Rapid Fire 4</td><td>P.Atk. +78, Atk. Spd. +20%, bow range becomes 600, only works with a bow</td></tr>
+<tr><td>Rapid Fire 5</td><td>P.Atk. +83, Atk. Spd. +20%, bow range becomes 600, only works with a bow</td></tr>
+<tr><td>Rapid Fire 6</td><td>P.Atk. +89, Atk. Spd. +20%, bow range becomes 600, only works with a bow</td></tr>
+<tr><td>Rapid Fire 7</td><td>P.Atk. +94, Atk. Spd. +20%, bow range becomes 600, only works with a bow</td></tr>
+<tr><td>Rapid Fire 8</td><td>P.Atk. +100, Atk. Spd. +20%, bow range becomes 600, only works with a bow</td></tr>
+<tr><td>Rapid Shot 1</td><td>Atk. Spd. with a bow +8%</td></tr>
+<tr><td>Rapid Shot 2</td><td>Atk. Spd. with a bow +12%</td></tr>
+<tr><td>Reflect Damage 1</td><td>Reflect 10% of melee range physical damage back on the attacker</td></tr>
+<tr><td>Reflect Damage 2</td><td>Reflect 15% of melee range physical damage back on the attacker</td></tr>
+<tr><td>Reflect Damage 3</td><td>Reflect 20% of melee range physical damage back on the attacker</td></tr>
+<tr><td>Regeneration 1</td><td>HP regen per tick +10%</td></tr>
+<tr><td>Regeneration 2</td><td>HP regen per tick +15%</td></tr>
+<tr><td>Regeneration 3</td><td>HP regen per tick +20%</td></tr>
+<tr><td>Resist Aqua 1</td><td>Resistance to Water attribute +15%</td></tr>
+<tr><td>Resist Aqua 2</td><td>Resistance to Water attribute +23%</td></tr>
+<tr><td>Resist Aqua 3</td><td>Resistance to Water attribute +30%</td></tr>
+<tr><td>Resist Fire 1</td><td>Resistance to Fire attribute +15%</td></tr>
+<tr><td>Resist Fire 2</td><td>Resistance to Fire attribute +23%</td></tr>
+<tr><td>Resist Fire 3</td><td>Resistance to Fire attribute +30%</td></tr>
+<tr><td>Resist Poison 1</td><td>Resistance to Poison attribute +30%</td></tr>
+<tr><td>Resist Poison 2</td><td>Resistance to Poison attribute +40%</td></tr>
+<tr><td>Resist Poison 3</td><td>Resistance to Poison attribute +50%</td></tr>
+<tr><td>Resist Shock 1</td><td>Resistance to Shock attribute +15%</td></tr>
+<tr><td>Resist Shock 2</td><td>Resistance to Shock attribute +20%</td></tr>
+<tr><td>Resist Shock 3</td><td>Resistance to Shock attribute +30%</td></tr>
+<tr><td>Resist Shock 4</td><td>Resistance to Shock attribute +40%</td></tr>
+<tr><td>Resist Wind 1</td><td>Resistance to Wind attribute +15%</td></tr>
+<tr><td>Resist Wind 2</td><td>Resistance to Wind attribute +23%</td></tr>
+<tr><td>Resist Wind 3</td><td>Resistance to Wind attribute +30%</td></tr>
+<tr><td>Sanctuary</td><td>P.Atk. -23%</td></tr>
+<tr><td>Sand Bomb 1-5</td><td>Accuracy -6</td></tr>
+<tr><td>Sand Bomb 6-9</td><td>Accuracy -9</td></tr>
+<tr><td>Sand Bomb 10</td><td>Accuracy -12</td></tr>
+<tr><td>Seal of Chaos 1-2</td><td>Accuracy -6</td></tr>
+<tr><td>Seal of Chaos 3+</td><td>Accuracy -8</td></tr>
+<tr><td>Seal of Despair</td><td>P.Atk. -10%, M.Def. -30%, Accuracy -6, Critical -30%, Critical Damage -30%, Speed -20%, Atk. Spd. -30%</td></tr>
+<tr><td>Seal of Disease</td><td>HP restored from heals -50%</td></tr>
+<tr><td>Seal of Scourge 1+</td><td>HP regen per tick set to 0</td></tr>
+<tr><td>Seal of Slow 1</td><td>Speed -30%</td></tr>
+<tr><td>Seal of Slow 2+</td><td>Speed -45%</td></tr>
+<tr><td>Seal of Suspension 1+</td><td>Reuse delay +200%</td></tr>
+<tr><td>Seal of Winter</td><td>Atk. Spd. -23%</td></tr>
+<tr><td>Servitor Haste 1</td><td>Atk. Spd. +15%</td></tr>
+<tr><td>Servitor Haste 2</td><td>Atk. Spd. +33%</td></tr>
+<tr><td>Servitor Magic Shield 1</td><td>M.Def. +23%</td></tr>
+<tr><td>Servitor Magic Shield 2</td><td>M.Def. +30%</td></tr>
+<tr><td>Servitor Physical Shield 1</td><td>P.Def. +8%</td></tr>
+<tr><td>Servitor Physical Shield 2</td><td>P.Def. +12%</td></tr>
+<tr><td>Servitor Physical Shield 3</td><td>P.Def. +15%</td></tr>
+<tr><td>Servitor Ultimate Defense 1</td><td>P.Def. +1800, M.Def. +1350, Speed 0</td></tr>
+<tr><td>Servitor Ultimate Defense 2</td><td>P.Def. +3600, M.Def. +2700, Speed 0</td></tr>
+<tr><td>Servitor Windwalk 1</td><td>Speed +20</td></tr>
+<tr><td>Servitor Windwalk 2</td><td>Speed +33</td></tr>
+<tr><td>Shield 1</td><td>P.Def. +8%</td></tr>
+<tr><td>Shield 2</td><td>P.Def. +12%</td></tr>
+<tr><td>Shield 3</td><td>P.Def. +15%</td></tr>
+<tr><td>Shield Slam</td><td>Physical skill silence</td></tr>
+<tr><td>Shock Blast</td><td>P.Def. -30%, M.Def. -30%</td></tr>
+<tr><td>Slow 1</td><td>Speed -30%</td></tr>
+<tr><td>Slow 2+</td><td>Speed -45%</td></tr>
+<tr><td>Snipe 1</td><td>P.Atk. +124, Accuracy +1, Critical +20%, Range +300</td></tr>
+<tr><td>Snipe 2</td><td>P.Atk. +134, Accuracy +3, Critical +20%, Range +300</td></tr>
+<tr><td>Snipe 3</td><td>P.Atk. +145, Accuracy +4, Critical +20%, Range +300</td></tr>
+<tr><td>Snipe 4</td><td>P.Atk. +155, Accuracy +4, Critical +20%, Range +300</td></tr>
+<tr><td>Snipe 5</td><td>P.Atk. +166, Accuracy +5, Critical +20%, Range +300</td></tr>
+<tr><td>Snipe 6</td><td>P.Atk. +177, Accuracy +5, Critical +20%, Range +300</td></tr>
+<tr><td>Snipe 7</td><td>P.Atk. +188, Accuracy +6, Critical +20%, Range +300</td></tr>
+<tr><td>Snipe 8</td><td>P.Atk. +199, Accuracy +6, Critical +20%, Range +300</td></tr>
+<tr><td>Song of Champion</td><td>Physical Skill Reuse Delay -30%, MP Cost -20%</td></tr>
+<tr><td>Song of Earth</td><td>P.Def. +25%</td></tr>
+<tr><td>Song of Flame Guard</td><td>Resistance to Fire attribute +30%</td></tr>
+<tr><td>Song of Hunter</td><td>Critical +100%</td></tr>
+<tr><td>Song of Invocation</td><td>Resistance to Darkness attribute +20%</td></tr>
+<tr><td>Song of Life</td><td>HP regen per tick +20%</td></tr>
+<tr><td>Song of Meditation</td><td>MP regen per tick +20%, MP Cost -10%</td></tr>
+<tr><td>Song of Renewal</td><td>Skill (all) Reuse Delay -30%, MP cost -5%</td></tr>
+<tr><td>Song of Storm Guard</td><td>Resistance to Wind attribute +30%</td></tr>
+<tr><td>Song of Vengeance</td><td>Reflect 20% of melee range physical damage back on the attacker</td></tr>
+<tr><td>Song of Vitality</td><td>HP +30%</td></tr>
+<tr><td>Song of Warding</td><td>M.Def. +30%</td></tr>
+<tr><td>Song of Water</td><td>Evasion +3</td></tr>
+<tr><td>Song of Wind</td><td>Speed +20</td></tr>
+<tr><td>Soul of Pa'agrio</td><td>M.Atk. +75%</td></tr>
+<tr><td>Soul of Sagitarrius 1</td><td>MP +10%</td></tr>
+<tr><td>Soul of Sagitarrius 2</td><td>MP +15%</td></tr>
+<tr><td>Soul of Sagitarrius 3</td><td>MP +20%</td></tr>
+<tr><td>Soul of Sagitarrius 4</td><td>MP +25%</td></tr>
+<tr><td>Soul Shield 1</td><td>P.Def. +8%</td></tr>
+<tr><td>Soul Shield 2</td><td>P.Def. +12%</td></tr>
+<tr><td>Soul Shield 3</td><td>P.Def. +15%</td></tr>
+<tr><td>Spirit Barrier 1</td><td>M.Def. +15%</td></tr>
+<tr><td>Spirit Barrier 2</td><td>M.Def. +23%</td></tr>
+<tr><td>Spirit Barrier 3</td><td>M.Def. +30%</td></tr>
+<tr><td>Spirit of Sagittarius</td><td><font color=red>Physical Skill MP Cost -??</font></td></tr>
+<tr><td>Spoil (enchanted)</td><td>Atk. Spd. -23%</td></tr>
+<tr><td>Spoil Festival (enchanted)</td><td>Atk. Spd. -23%</td></tr>
+<tr><td>Sprint 1</td><td>Speed +20</td></tr>
+<tr><td>Sprint 2</td><td>Speed +33</td></tr>
+<tr><td>Stealth 1</td><td>P.Atk. -45%, P.Def. -45%, M.Def. -45%, Accuracy -12, Evasion -12</td></tr>
+<tr><td>Stealth 2</td><td>P.Atk. -45%, P.Def. -30%, M.Def. -30%, Accuracy -12, Evasion -8</td></tr>
+<tr><td>Stealth 3</td><td>P.Atk. -45%, P.Def. -15%, M.Def. -15%, Accuracy -12, Evasion -4</td></tr>
+<tr><td>Surrender to Earth 1</td><td>Resistance against Earth attribute -25%, <font color=red>Resistance to Wind attribute +??%</font></td></tr>
+<tr><td>Surrender to Earth 2+</td><td>Resistance against Earth attribute -30%, <font color=red>Resistance to Wind attribute +??%</font></td></tr>
+<tr><td>Surrender to Fire 1-3</td><td>Resistance against Fire attribute -25%, <font color=red>Resistance to Water attribute +??%</font></td></tr>
+<tr><td>Surrender to Fire 4+</td><td>Resistance against Fire attribute -30%, <font color=red>Resistance to Water attribute +??%</font></td></tr>
+<tr><td>Surrender to Poison 1-3</td><td>Resistance against Poison attribute -25%</td></tr>
+<tr><td>Surrender to Poison 4+</td><td>Resistance against Poison attribute -30%</td></tr>
+<tr><td>Surrender to Water 1+</td><td>Resistance against Water attribute -30%, <font color=red>Resistance to Fire attribute +??%</font></td></tr>
+<tr><td>Surrender to Wind 1+</td><td>Resistance against Wind attribute -30%, <font color=red>Resistance to Earth attribute +??%</font></td></tr>
+<tr><td>Tact of Pa'agrio 1</td><td>Evasion +2</td></tr>
+<tr><td>Tact of Pa'agrio 2</td><td>Evasion +3</td></tr>
+<tr><td>Tact of Pa'agrio 3</td><td>Evasion +4</td></tr>
+<tr><td>Thrill Fight 1</td><td>Speed -20%, Atk. Spd. +5%</td></tr>
+<tr><td>Thrill Fight 2</td><td>Speed -20%, Atk. Spd. +10%</td></tr>
+<tr><td>Tribunal 1-6</td><td>Critical -30%</td></tr>
+<tr><td>Tribunal 7-9</td><td>Critical -40%</td></tr>
+<tr><td>Tribunal 10</td><td>Critical -50%</td></tr>
+<tr><td>Touch of Death</td><td>Max CP -90%, Resist Debuffs -30%, Heals are 30% less effective</td></tr>
+<tr><td>Touch of Life</td><td><font color=red>Cancel Resistance +60%</font>Resist Debuffs 30%, Heals are 30% more effective</td></tr>
+<tr><td>Ultimate Defense</td><td>P.Def. +1800, M.Def. +1350, Speed 0<font color=red>, Cancel Resistance +??</font></td></tr>
+<tr><td>Ultimate Defense</td><td>P.Def. +3600, M.Def. +2700, Speed 0<font color=red>, Cancel Resistance +??</font></td></tr>
+<tr><td>Ultimate Evasion 1</td><td>Evasion +20<font color=red>, Cancel Resistance +??</font></td></tr>
+<tr><td>Ultimate Evasion 2</td><td>Evasion +25<font color=red>, Cancel Resistance +??</font></td></tr>
+<tr><td>Under the Protection of Pa'agrio 1</td><td>Shield Block Rate +30%</td></tr>
+<tr><td>Under the Protection of Pa'agrio 2</td><td>Shield Block Rate +40%</td></tr>
+<tr><td>Under the Protection of Pa'agrio 3</td><td>Shield Block Rate +50%</td></tr>
+<tr><td>Unholy Resistance 1</td><td>Resistance to Darkness attribute +15%</td></tr>
+<tr><td>Unholy Resistance 2</td><td>Resistance to Darkness attribute +23%</td></tr>
+<tr><td>Unholy Resistance 3</td><td>Resistance to Darkness attribute +30%</td></tr>
+<tr><td>Vampiric Rage 1</td><td>Recover 6% of melee physical damage as HP</td></tr>
+<tr><td>Vampiric Rage 2</td><td>Recover 7% of melee physical damage as HP</td></tr>
+<tr><td>Vampiric Rage 3</td><td>Recover 8% of melee physical damage as HP</td></tr>
+<tr><td>Vampiric Rage 4</td><td>Recover 9% of melee physical damage as HP</td></tr>
+<tr><td>Vengeance</td><td>P.Def. +5400, M.Def. +4050, Speed 0<font color=red>, Cancel Resistance +??</font></td></tr>
+<tr><td>Victories of Pa'agrio</td><td>HP +20%, restores the HP added, Speed -20%, Accuracy +4, P.Def. +20%, P.Atk. +10%, M.Atk. +20%, Atk. Spd. +20%, Critical +20%, Critical Damage +20%, M.Def. +20%, Casting Spd. +20%, Debuff Resistance +20%</td></tr>
+<tr><td>Vision of Pa'agrio 1</td><td>Accuracy +2</td></tr>
+<tr><td>Vision of Pa'agrio 2</td><td>Accuracy +3</td></tr>
+<tr><td>Vision of Pa'agrio 3</td><td>Accuracy +4</td></tr>
+<tr><td>War Chant 1</td><td>P.Atk. +4%, does not stack with Greater Shield or Earth Chant.</td></tr>
+<tr><td>War Chant 2</td><td>P.Atk. +7%, does not stack with Greater Shield or Earth Chant.</td></tr>
+<tr><td>War Chant 3</td><td>P.Atk. +10%, does not stack with Greater Shield or Earth Chant.</td></tr>
+<tr><td>War Cry</td><td>P.Atk. +20%</td></tr>
+<tr><td>War Cry</td><td>P.Atk. +25%</td></tr>
+<tr><td>Warrior Servitor</td><td>HP +20%, P.Def. +20%, Accuracy +4, P.Atk. +10%, Speed -10%, Atk. Spd. +20%, HP added is healed, Debuff resistance +10%</td></tr>
+<tr><td>Wild Defense</td><td>Speed -90%, Atk. Speed -70%, P.Def. +400%, M.Def. +400%</td></tr>
+<tr><td>Wild Magic 1</td><td>Magic Critical rate +200%</td></tr>
+<tr><td>Wild Magic 2</td><td>Magic Critical rate +300%</td></tr>
+<tr><td>Wind Shackle 1</td><td>Atk. Spd. -17%</td></tr>
+<tr><td>Wind Shackle 2-5</td><td>Atk. Spd. -20%</td></tr>
+<tr><td>Wind Shackle 6+</td><td>Atk. Spd. -23%</td></tr>
+<tr><td>Wind Vortex</td><td>Speed -10%, Atk. Spd. -10%, Casting Spd. -30%, MP Regen per tick -12, Resistance to Wind attribute -20%, <font color=red>Resistance to Earth attribute +??%</font></td></tr>
+<tr><td>Wind Walk 1</td><td>Speed +20</td></tr>
+<tr><td>Wind Walk 2</td><td>Speed +33</td></tr>
+<tr><td>Wisdom of Pa'agrio 1</td><td>Casting Spd. +15%</td></tr>
+<tr><td>Wisdom of Pa'agrio 2</td><td>Casting Spd. +23%</td></tr>
+<tr><td>Wisdom of Pa'agrio 3</td><td>Casting Spd. +30%</td></tr>
+<tr><td>Wizard Servitor</td><td>MP Regen per tick +20%, Speed -20%, M.Def. +20%, M.Atk. +20%, Casting Spd. +20%, Magic Critical Rate +100%, Debuff Resistance +10%</td></tr>
+<tr><td>Wolf Spirit Totem</td><td>Speed +20%, Accuracy +3</td></tr>
+<tr><td>Wyvern Aegis</td><td>P.Def. +7000, M.Def. +6000</td></tr>
+<tr><td>Zealot 1</td><td>Speed +10, HP Restored from heals -50%<br>With Fist or any kind of Blunt:Atk. Spd. +10%, Accuracy +6, Critical Damage +33%<br>With Polearm or any kind of Sword:Critical +33, Atk. Spd. +10%, Accuracy +6</td></tr>
+<tr><td>Zealot 2</td><td>Speed +20, HP Restored from heals -50%<br>With Fist or any kind of Blunt:Atk. Spd. +20%, Accuracy +6, Critical Damage +66%<br>With Polearm or any kind of Sword:Critical +66, Atk. Spd. +20%, Accuracy +6</td></tr>
+<tr><td>Zealot 3</td><td>Speed +30, HP Restored from heals -50%<br>With Fist or any kind of Blunt:Atk. Spd. +30%, Accuracy +6, Critical Damage +100%<br>With Polearm or any kind of Sword:Critical +100, Atk. Spd. +30%, Accuracy +6</td></tr>
+</table>
+
+<hr>
+<h4>Damage Over Time</h4>
+<table class="data" align=center>
+<tr><td>type</td><td>Level</td><td>Damage Per Tick</td></tr>
+<tr><td>Aqua Cubic</td><td>1-3</td><td>77</td></tr>
+<tr><td>Aqua Cubic</td><td>4-5</td><td>94</td></tr>
+<tr><td>Aqua Cubic</td><td>6-7</td><td>108</td></tr>
+<tr><td>Aqua Cubic</td><td>8-9</td><td>118</td></tr>
+<tr><td>Arcane Chaos</td><td>1</td><td>24.0 (mp)</td></tr>
+<tr><td>Aura Sink</td><td>1</td><td>4.5 (mp)</td></tr>
+<tr><td>Aura Sink</td><td>2</td><td>5.5 (mp)</td></tr>
+<tr><td>Aura Sink</td><td>3</td><td>7.5 (mp)</td></tr>
+<tr><td>Aura Sink</td><td>4</td><td>8.5 (mp)</td></tr>
+<tr><td>Aura Sink</td><td>5</td><td>10.5 (mp)</td></tr>
+<tr><td>Aura Sink</td><td>6</td><td>11.5 (mp)</td></tr>
+<tr><td>Blaze Quake, Frost Flame</td><td>1</td><td>44</td></tr>
+<tr><td>Blaze Quake, Frost Flame</td><td>2</td><td>60</td></tr>
+<tr><td>Bleed, Sting</td><td>1</td><td>13.5</td></tr>
+<tr><td>Bleed, Sting</td><td>2</td><td>17.5</td></tr>
+<tr><td>Bleed, Sting</td><td>3</td><td>22.5</td></tr>
+<tr><td>Bleed, Sting</td><td>4</td><td>27.5</td></tr>
+<tr><td>Bleed, Sting</td><td>5</td><td>31.5</td></tr>
+<tr><td>Bleed, Sting</td><td>6</td><td>34.5</td></tr>
+<tr><td>Chill Flame</td><td>1</td><td>20</td></tr>
+<tr><td>Chill Flame</td><td>2</td><td>30</td></tr>
+<tr><td>Corpse Plague</td><td>1</td><td>31.5</td></tr>
+<tr><td>Corpse Plague</td><td>2</td><td>38.5</td></tr>
+<tr><td>Corpse Plague</td><td>3</td><td>44.5</td></tr>
+<tr><td>Corpse Plague</td><td>4</td><td>48.5</td></tr>
+<tr><td>Dark Vortex</td><td>1</td><td>12.0 (mp)</td></tr>
+<tr><td>Fire Vortex</td><td>1</td><td>12.0 (mp)</td></tr>
+<tr><td>Freezing Shackle, Decay, Freezing Flame, Seal of Flame</td><td>1</td><td>77</td></tr>
+<tr><td>Freezing Shackle, Decay, Freezing Flame, Seal of Flame</td><td>2</td><td>94</td></tr>
+<tr><td>Freezing Shackle, Decay, Freezing Flame, Seal of Flame</td><td>3</td><td>108</td></tr>
+<tr><td>Freezing Shackle, Decay, Freezing Flame, Seal of Flame</td><td>4</td><td>118</td></tr>
+<tr><td>Ice Dagger</td><td>1-4</td><td>22.5</td></tr>
+<tr><td>Ice Dagger</td><td>5-9</td><td>27.5</td></tr>
+<tr><td>Ice Dagger</td><td>10-14</td><td>31.5</td></tr>
+<tr><td>Ice Dagger</td><td>15+</td><td>34.5</td></tr>
+<tr><td>Ice Dagger</td><td>ench</td><td>34.5</td></tr>
+<tr><td>Ice Vortex</td><td>1</td><td>12.0 (mp)</td></tr>
+<tr><td>Inferno</td><td>1</td><td>118</td></tr>
+<tr><td>Light Vortex</td><td>1</td><td>12.0 (mp)</td></tr>
+<tr><td>Poison</td><td>1</td><td>18.5</td></tr>
+<tr><td>Poison</td><td>2</td><td>31.5</td></tr>
+<tr><td>Poison</td><td>3</td><td>38.5</td></tr>
+<tr><td>Poison</td><td>4</td><td>44.5</td></tr>
+<tr><td>Poison</td><td>5</td><td>48.5</td></tr>
+<tr><td>Poisonous Cloud, Curse Poison, Seal of Poison</td><td>1</td><td>18.5</td></tr>
+<tr><td>Poisonous Cloud, Curse Poison, Seal of Poison</td><td>2</td><td>24.5</td></tr>
+<tr><td>Poisonous Cloud, Curse Poison, Seal of Poison</td><td>3</td><td>31.5</td></tr>
+<tr><td>Poisonous Cloud, Curse Poison, Seal of Poison</td><td>4</td><td>38.5</td></tr>
+<tr><td>Poisonous Cloud, Curse Poison, Seal of Poison</td><td>5</td><td>44.5</td></tr>
+<tr><td>Poisonous Cloud, Curse Poison, Seal of Poison</td><td>6</td><td>48.5</td></tr>
+<tr><td>Poison Blade Dance</td><td>1</td><td>38.5</td></tr>
+<tr><td>Poison Blade Dance</td><td>2</td><td>44.5</td></tr>
+<tr><td>Poison Blade Dance</td><td>3</td><td>48.5</td></tr>
+<tr><td>Seal of Gloom</td><td>3</td><td>7.5 (mp)</td></tr>
+<tr><td>Seal of Gloom</td><td>4</td><td>8.5 (mp)</td></tr>
+<tr><td>Seal of Gloom</td><td>5</td><td>10.5 (mp)</td></tr>
+<tr><td>Seal of Gloom</td><td>6</td><td>12.5 (mp)</td></tr>
+<tr><td>Spoil (enchanted)</td><td>1+</td><td>118.5</td></tr>
+<tr><td>Toxic Smoke</td><td>1</td><td>12.5</td></tr>
+<tr><td>Toxic Smoke</td><td>2</td><td>18.5</td></tr>
+<tr><td>Toxic Smoke</td><td>3</td><td>24.5</td></tr>
+<tr><td>Toxic Smoke</td><td>4</td><td>31.5</td></tr>
+<tr><td>Toxic Smoke</td><td>5</td><td>38.5</td></tr>
+<tr><td>Toxic Smoke</td><td>6</td><td>44.5</td></tr>
+<tr><td>Toxic Smoke</td><td>7-8</td><td>48.5</td></tr>
+<tr><td>Toxic Smoke</td><td>9-10</td><td>50.5</td></tr>
+<tr><td>Toxic Smoke</td><td>11-12</td><td>51.5</td></tr>
+<tr><td>Venom</td><td>1</td><td>8.5</td></tr>
+<tr><td>Venom</td><td>2</td><td>12.5</td></tr>
+<tr><td>Venom</td><td>3</td><td>18.5</td></tr>
+<tr><td>Venom</td><td>4</td><td>31.5</td></tr>
+<tr><td>Venom</td><td>5</td><td>38.5</td></tr>
+<tr><td>Wind Vortex</td><td>1</td><td>12.0 (mp)</td></tr>
+</table>
+
+<h4>Healing Over Time</h4>
+<table class="data" align=center>
+<tr><td>type</td><td>Level</td><td>Heal Per Tick</td></tr>
+<tr><td>Chant of Life</td><td>1</td><td>12</td></tr>
+<tr><td>Chant of Life</td><td>2</td><td>15</td></tr>
+<tr><td>Chant of Life</td><td>3</td><td>18</td></tr>
+<tr><td>Chant of Life</td><td>4</td><td>23</td></tr>
+<tr><td>Chant of Life</td><td>5</td><td>27</td></tr>
+<tr><td>Chant of Life</td><td>6</td><td>31</td></tr>
+<tr><td>Chant of Life</td><td>7</td><td>35</td></tr>
+<tr><td>Chant of Life</td><td>8</td><td>39</td></tr>
+<tr><td>Chant of Life</td><td>9</td><td>43</td></tr>
+<tr><td>Chant of Life</td><td>10</td><td>45</td></tr>
+<tr><td>Chant of Life</td><td>11</td><td>46</td></tr>
+<tr><td>Chant of Life</td><td>12</td><td>48</td></tr>
+<tr><td>Chant of Life</td><td>13</td><td>50</td></tr>
+<tr><td>Chant of Life</td><td>14</td><td>52</td></tr>
+<tr><td>Chant of Life</td><td>15</td><td>53</td></tr>
+<tr><td>Chant of Life</td><td>16</td><td>55</td></tr>
+<tr><td>Chant of Life</td><td>17</td><td>56</td></tr>
+<tr><td>Chant of Life</td><td>18</td><td>58</td></tr>
+<tr><td>Chant of Life (ench)</td><td>+1-2</td><td>58</td></tr>
+<tr><td>Chant of Life (ench)</td><td>+3-6</td><td>59</td></tr>
+<tr><td>Chant of Life (ench)</td><td>+7-9</td><td>60</td></tr>
+<tr><td>Chant of Life (ench)</td><td>+10-13</td><td>61</td></tr>
+<tr><td>Chant of Life (ench)</td><td>+14-17</td><td>62</td></tr>
+<tr><td>Chant of Life (ench)</td><td>+18-20</td><td>63</td></tr>
+<tr><td>Chant of Life (ench)</td><td>+21-24</td><td>64</td></tr>
+<tr><td>Chant of Life (ench)</td><td>+25-27</td><td>65</td></tr>
+<tr><td>Chant of Life (ench)</td><td>+28-30</td><td>66</td></tr>
+<tr><td>Greater Healing Potion</td><td></td><td>50.3</td></tr>
+<tr><td>Healing Potion</td><td></td><td>24.3</td></tr>
+<tr><td>Heart of Pa'agrio</td><td>1</td><td>31</td></tr>
+<tr><td>Heart of Pa'agrio</td><td>2</td><td>35</td></tr>
+<tr><td>Heart of Pa'agrio</td><td>3</td><td>39</td></tr>
+<tr><td>Heart of Pa'agrio</td><td>4</td><td>43</td></tr>
+<tr><td>Heart of Pa'agrio</td><td>5</td><td>45</td></tr>
+<tr><td>Heart of Pa'agrio</td><td>6</td><td>46</td></tr>
+<tr><td>Heart of Pa'agrio</td><td>7</td><td>48</td></tr>
+<tr><td>Heart of Pa'agrio</td><td>8</td><td>50</td></tr>
+<tr><td>Heart of Pa'agrio</td><td>9</td><td>52</td></tr>
+<tr><td>Heart of Pa'agrio</td><td>10</td><td>53</td></tr>
+<tr><td>Heart of Pa'agrio</td><td>11</td><td>55</td></tr>
+<tr><td>Heart of Pa'agrio</td><td>12</td><td>56</td></tr>
+<tr><td>Heart of Pa'agrio</td><td>13</td><td>58</td></tr>
+<tr><td>Heart of Pa'agrio (ench)</td><td>+1-2</td><td>58</td></tr>
+<tr><td>Heart of Pa'agrio (ench)</td><td>+3-6</td><td>59</td></tr>
+<tr><td>Heart of Pa'agrio (ench)</td><td>+7-9</td><td>60</td></tr>
+<tr><td>Heart of Pa'agrio (ench)</td><td>+10-13</td><td>61</td></tr>
+<tr><td>Heart of Pa'agrio (ench)</td><td>+14-17</td><td>62</td></tr>
+<tr><td>Heart of Pa'agrio (ench)</td><td>+18-20</td><td>63</td></tr>
+<tr><td>Heart of Pa'agrio (ench)</td><td>+21-24</td><td>64</td></tr>
+<tr><td>Heart of Pa'agrio (ench)</td><td>+25-27</td><td>65</td></tr>
+<tr><td>Heart of Pa'agrio (ench)</td><td>+28-30</td><td>66</td></tr>
+<tr><td>Lesser Healing Potion</td><td></td><td>8.3</td></tr>
+</table>
+<!----right column---->
+
+</table>
+
+</body>
+</html>
+</body>
+</html>

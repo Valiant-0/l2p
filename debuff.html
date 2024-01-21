@@ -1,0 +1,66 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css"
+href="style.css" />
+<title>Debuffs</title>
+</head>
+
+<body><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	
+
+<table border="1" cellpadding="0" width="1000" align="center">
+
+<!----left---->
+<td class="left" width=200 valign=top>
+<script src="sidebar.js"><hr>
+</script>
+</td>
+
+<!----middle---->
+<td class="main" width=800 valign=top bgcolor=white>
+<h2>Debuffs</h2>
+<p><b>The formula setup you'll find here is absolutely, without a doubt wrong! I warned you. These are only presented in a mathematical sense out of a really poor sense of aesthetic.</b></p>
+<ul>
+<li>The chance to land a debuff depends on several things with slight variations between them. From personal observations, the chance to land a debuff depends on:</li>
+<ul>
+<li>One of the base stats affects the chance of resisting a debuff</li>
+<ul
+<li>CON resists stun and bleed</li>
+<li>MEN affects poison, root, sleep resistance and basically everything not covered by another stat.</li>
+<li>From experience, base stats do not provide a great amount of resistance to a debuff. There are no exact numbers to provide but you're looking at a 1% or even less difference per point of a base stat in debuff resistance.</li>
+</ul>
+<li>Magic-based debuffs are affected by both the M.Atk. of the caster and the M.Def. of the target.</li>
+<li>The level of the skill affects the chance to land a debuff. I'm calling this Learn Level on L2P. Basically to ensure that a debuff will land, you need to keep the skill leveled up. In general, getting a debuff skill at level 70 will ensure that it lands normally on a target who is level 70, but has a reduced chance on a level 71 or higher and of course an increased chance on a level 69 or lower target. Specifically, it sets an effect multiplier which seems to correlate to a target's level similarly to accuracy & evasion. Skills like shield stun have an extremely high effect multiplier and skills like a tyrant's stun skill have a low multiplier.</li>
+<li>Any buff a character might have to resist a specific debuff, such as Resist Shock, Invigor, Mental Aegis, etc.</li>
+</ul>
+<li>Since little is known about the actual formula for determining debuffs, here is a general outline of how it seems to work:</li>
+	<ul>
+	<li>Resistance would be anything like Armor Set Bonuses, Buffs, Passives, Toggles or such that resistance the debuff in question. There are many different ways to resist various debuffs.</li>
+	</ul>
+<ul>
+<li>Stun - (Base Land Rate/CON Modifier*Resistance)*(Learn Level/Target Level)</li>
+<li>Physical Bleed - (Base Land Rate/*CON Modifier*Resistance)*(Learn Level/Target Level), can be cured by a cure bleed spell.</li>
+<li>Magical Bleed - <br>(Base Land Rate/Men Modifier*Resistance)*(Learn Level/Target Level)*(M.Atk./M.Def.),<br> cannot be cured.</li>
+<li>Poison - (Base Land Rate/Men Modifier*Resistance)*(Learn Level/Target Level)*(M.Atk/M.Def.)</li>
+<ul>
+<li>Viper Cubic ignores any kind of resistance to Poison because the genius who coded the skill forgot to make it poison attribute. It can be cured by Cure Poison skills.</li>
+</ul>
+<li>Holy Aura - (Base Land Rate/Men Modifier*Resistance)*(Learn Level/Target Level); holy aura is not a magical skill</li>
+<li>Root/Hold - (Base Land Rate*Men Modifier*Resistance)*(Learn Level/Target Level)*(M.Atk./M.Def.)</li>
+<li>Physical Slow (Cripple) - (Base Land Rate/Men Modifier)*(Learn Level/Target Level)</li>
+<li>Magical Slow - (Base Land Rate/Men Modifier)*(Learn Level/Target Level)*(M.Atk/M.Def.)</li>
+<li>Sleep - (Base Land Rate/Men Modifier*Resistance)*(Learn Level/Target Level)*(M.Atk./M.Def.)</li>
+<li>Paralyze (Base Land Rate/Men Modifier*Resistance)*(Learn Level/Target Level)*(M.Atk./M.Def.)</li>
+<li>Misc. - most of the rest like the overlord debuffs are the same as roots</li>
+</ul>
+
+<!----right column---->
+
+</table>
+
+</body>
+</html>
+</body>
+</html>
